@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://guilleatm.github.io',
-  base: '/dacsa',
+  base: '/dacsa/',
   vite: {
     plugins: [tailwindcss()],
   },
