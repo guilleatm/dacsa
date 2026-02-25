@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://catedradacsa.uv.es',
+  site: 'https://guilleatm.github.io',
+  base: '/dacsa',
   vite: {
     plugins: [tailwindcss()],
   },

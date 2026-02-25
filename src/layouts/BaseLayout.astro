@@ -35,7 +35,7 @@ const {
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Logo / wordmark -->
-          <a href={`/${lang}/`} class="flex items-center gap-3 group">
+          <a href={`${import.meta.env.BASE_URL}${lang}/`} class="flex items-center gap-3 group">
             <div class="w-8 h-8 bg-dacsa-amber rounded-sm flex items-center justify-center">
               <span class="text-white font-bold text-sm">D</span>
             </div>
@@ -48,37 +48,37 @@ const {
           <!-- Desktop nav -->
           <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
             <a
-              href={`/${lang}/`}
+              href={`${import.meta.env.BASE_URL}${lang}/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.home')}
             </a>
             <a
-              href={`/${lang}/noticias/`}
+              href={`${import.meta.env.BASE_URL}${lang}/noticias/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.news')}
             </a>
             <a
-              href={`/${lang}/actividades/`}
+              href={`${import.meta.env.BASE_URL}${lang}/actividades/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.activities')}
             </a>
             <a
-              href={`/${lang}/transparencia/`}
+              href={`${import.meta.env.BASE_URL}${lang}/transparencia/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.transparency')}
             </a>
             <a
-              href={`/${lang}/equipo/`}
+              href={`${import.meta.env.BASE_URL}${lang}/equipo/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.team')}
             </a>
             <a
-              href={`/${lang}/contacto/`}
+              href={`${import.meta.env.BASE_URL}${lang}/contacto/`}
               class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
             >
               {t(lang, 'nav.contact')}
@@ -143,37 +143,37 @@ const {
       <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
         <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1">
           <a
-            href={`/${lang}/`}
+            href={`${import.meta.env.BASE_URL}${lang}/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.home')}
           </a>
           <a
-            href={`/${lang}/noticias/`}
+            href={`${import.meta.env.BASE_URL}${lang}/noticias/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.news')}
           </a>
           <a
-            href={`/${lang}/actividades/`}
+            href={`${import.meta.env.BASE_URL}${lang}/actividades/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.activities')}
           </a>
           <a
-            href={`/${lang}/transparencia/`}
+            href={`${import.meta.env.BASE_URL}${lang}/transparencia/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.transparency')}
           </a>
           <a
-            href={`/${lang}/equipo/`}
+            href={`${import.meta.env.BASE_URL}${lang}/equipo/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.team')}
           </a>
           <a
-            href={`/${lang}/contacto/`}
+            href={`${import.meta.env.BASE_URL}${lang}/contacto/`}
             class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
           >
             {t(lang, 'nav.contact')}
@@ -209,27 +209,27 @@ const {
             </h3>
             <ul class="space-y-2 text-sm text-gray-400">
               <li>
-                <a href={`/${lang}/noticias/`} class="hover:text-white transition-colors">
+                <a href={`${import.meta.env.BASE_URL}${lang}/noticias/`} class="hover:text-white transition-colors">
                   {t(lang, 'nav.news')}
                 </a>
               </li>
               <li>
-                <a href={`/${lang}/actividades/`} class="hover:text-white transition-colors">
+                <a href={`${import.meta.env.BASE_URL}${lang}/actividades/`} class="hover:text-white transition-colors">
                   {t(lang, 'nav.activities')}
                 </a>
               </li>
               <li>
-                <a href={`/${lang}/transparencia/`} class="hover:text-white transition-colors">
+                <a href={`${import.meta.env.BASE_URL}${lang}/transparencia/`} class="hover:text-white transition-colors">
                   {t(lang, 'nav.transparency')}
                 </a>
               </li>
               <li>
-                <a href={`/${lang}/equipo/`} class="hover:text-white transition-colors">
+                <a href={`${import.meta.env.BASE_URL}${lang}/equipo/`} class="hover:text-white transition-colors">
                   {t(lang, 'nav.team')}
                 </a>
               </li>
               <li>
-                <a href={`/${lang}/contacto/`} class="hover:text-white transition-colors">
+                <a href={`${import.meta.env.BASE_URL}${lang}/contacto/`} class="hover:text-white transition-colors">
                   {t(lang, 'nav.contact')}
                 </a>
               </li>
