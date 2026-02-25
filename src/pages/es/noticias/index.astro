@@ -46,7 +46,7 @@ function formatDate(date: Date): string {
       <nav aria-label="Breadcrumb" class="mb-4">
         <ol class="flex items-center gap-2 text-sm text-dacsa-gray">
           <li>
-            <a href="/es/" class="hover:text-dacsa-amber transition-colors">Inicio</a>
+            <a href={`${import.meta.env.BASE_URL}es/`} class="hover:text-dacsa-amber transition-colors">Inicio</a>
           </li>
           <li aria-hidden="true" class="text-gray-300">/</li>
           <li class="text-dacsa-dark font-medium" aria-current="page">Noticias</li>
@@ -66,7 +66,7 @@ function formatDate(date: Date): string {
         <ul class="flex flex-wrap gap-1 border-b border-gray-200 list-none" role="list">
           {filterTabs.map((tab) => {
             const isActive = activeCat === tab.key;
-            const href = tab.key === '' ? '/es/noticias/' : `/es/noticias/?cat=${tab.key}`;
+            const href = tab.key === '' ? `${import.meta.env.BASE_URL}es/noticias/` : `${import.meta.env.BASE_URL}es/noticias/?cat=${tab.key}`;
             return (
               <li>
                 <a
@@ -143,7 +143,7 @@ function formatDate(date: Date): string {
 
                   <!-- Read more -->
                   <a
-                    href={`/es/noticias/${article.slug}/`}
+                    href={`${import.meta.env.BASE_URL}es/noticias/${article.slug}/`}
                     class="text-sm font-semibold text-dacsa-amber hover:text-amber-600 transition-colors mt-auto"
                     aria-label={`Leer más sobre: ${article.data.title}`}
                   >

@@ -41,11 +41,11 @@ function formatDate(d: Date): string {
     <nav aria-label="Breadcrumb">
       <ol class="flex items-center gap-2 text-sm text-dacsa-gray flex-wrap">
         <li>
-          <a href={`/${lang}/`} class="hover:text-dacsa-amber transition-colors">Inicio</a>
+          <a href={`${import.meta.env.BASE_URL}${lang}/`} class="hover:text-dacsa-amber transition-colors">Inicio</a>
         </li>
         <li aria-hidden="true" class="text-gray-300">/</li>
         <li>
-          <a href={`/${lang}/noticias/`} class="hover:text-dacsa-amber transition-colors">Noticias</a>
+          <a href={`${import.meta.env.BASE_URL}${lang}/noticias/`} class="hover:text-dacsa-amber transition-colors">Noticias</a>
         </li>
         <li aria-hidden="true" class="text-gray-300">/</li>
         <li class="text-dacsa-dark font-medium truncate max-w-xs sm:max-w-sm" aria-current="page">
@@ -107,7 +107,7 @@ function formatDate(d: Date): string {
       <!-- Back link -->
       <div class="mt-12 pt-8 border-t border-gray-100">
         <a
-          href={`/${lang}/noticias/`}
+          href={`${import.meta.env.BASE_URL}${lang}/noticias/`}
           class="inline-flex items-center gap-2 text-sm font-semibold text-dacsa-gray hover:text-dacsa-amber transition-colors"
         >
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -142,7 +142,7 @@ function formatDate(d: Date): string {
                     </time>
                   </div>
                   <a
-                    href={`/${lang}/noticias/${item.slug}/`}
+                    href={`${import.meta.env.BASE_URL}${lang}/noticias/${item.slug}/`}
                     class="text-sm font-medium text-dacsa-dark hover:text-dacsa-amber transition-colors leading-snug block"
                   >
                     {item.title}
