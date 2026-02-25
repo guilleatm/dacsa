@@ -1,0 +1,287 @@
+---
+import '../styles/global.css';
+import { t, type Locale } from '../i18n/index.ts';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang: Locale;
+}
+
+const {
+  title,
+  description = 'Cátedra de Excelencia y Desarrollo en Emprendimiento: de Estudiante a Empresario — Universitat de Valencia',
+  lang,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} — Cátedra DACSA-UV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-dacsa-dark font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo / wordmark -->
+          <a href={`/${lang}/`} class="flex items-center gap-3 group">
+            <div class="w-8 h-8 bg-dacsa-amber rounded-sm flex items-center justify-center">
+              <span class="text-white font-bold text-sm">D</span>
+            </div>
+            <div class="leading-tight">
+              <span class="font-semibold text-dacsa-dark text-sm block">Cátedra DACSA</span>
+              <span class="text-xs text-dacsa-gray">Universitat de Valencia</span>
+            </div>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
+            <a
+              href={`/${lang}/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.home')}
+            </a>
+            <a
+              href={`/${lang}/noticias/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.news')}
+            </a>
+            <a
+              href={`/${lang}/actividades/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.activities')}
+            </a>
+            <a
+              href={`/${lang}/transparencia/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.transparency')}
+            </a>
+            <a
+              href={`/${lang}/equipo/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.team')}
+            </a>
+            <a
+              href={`/${lang}/contacto/`}
+              class="text-sm font-medium text-dacsa-gray hover:text-dacsa-amber transition-colors"
+            >
+              {t(lang, 'nav.contact')}
+            </a>
+          </nav>
+
+          <!-- Language switcher + mobile menu toggle -->
+          <div class="flex items-center gap-3">
+            <!-- Language switcher -->
+            <div
+              class="flex items-center gap-1 text-xs font-medium border border-gray-200 rounded px-2 py-1"
+            >
+              <a
+                href={Astro.url.pathname.replace(`/${lang}/`, '/es/')}
+                class={lang === 'es'
+                  ? 'text-dacsa-amber font-semibold'
+                  : 'text-dacsa-gray hover:text-dacsa-amber'}
+              >
+                ES
+              </a>
+              <span class="text-gray-300">/</span>
+              <a
+                href={Astro.url.pathname.replace(`/${lang}/`, '/ca/')}
+                class={lang === 'ca'
+                  ? 'text-dacsa-amber font-semibold'
+                  : 'text-dacsa-gray hover:text-dacsa-amber'}
+              >
+                CA
+              </a>
+              <span class="text-gray-300">/</span>
+              <a
+                href={Astro.url.pathname.replace(`/${lang}/`, '/en/')}
+                class={lang === 'en'
+                  ? 'text-dacsa-amber font-semibold'
+                  : 'text-dacsa-gray hover:text-dacsa-amber'}
+              >
+                EN
+              </a>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button
+              id="mobile-menu-toggle"
+              class="md:hidden p-2 rounded text-dacsa-gray hover:text-dacsa-dark"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile nav drawer -->
+      <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white">
+        <nav class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1">
+          <a
+            href={`/${lang}/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.home')}
+          </a>
+          <a
+            href={`/${lang}/noticias/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.news')}
+          </a>
+          <a
+            href={`/${lang}/actividades/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.activities')}
+          </a>
+          <a
+            href={`/${lang}/transparencia/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.transparency')}
+          </a>
+          <a
+            href={`/${lang}/equipo/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.team')}
+          </a>
+          <a
+            href={`/${lang}/contacto/`}
+            class="px-3 py-2 text-sm font-medium text-dacsa-gray hover:text-dacsa-amber hover:bg-amber-50 rounded transition-colors"
+          >
+            {t(lang, 'nav.contact')}
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-dacsa-dark text-white mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Col 1: Identity -->
+          <div>
+            <div class="flex items-center gap-2 mb-3">
+              <div class="w-7 h-7 bg-dacsa-amber rounded-sm flex items-center justify-center">
+                <span class="text-white font-bold text-xs">D</span>
+              </div>
+              <span class="font-semibold text-white">Cátedra DACSA-UV</span>
+            </div>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Cátedra de Excelencia y Desarrollo en Emprendimiento: de Estudiante a Empresario.
+            </p>
+          </div>
+
+          <!-- Col 2: Nav links -->
+          <div>
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-dacsa-amber mb-3">
+              Navegación
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href={`/${lang}/noticias/`} class="hover:text-white transition-colors">
+                  {t(lang, 'nav.news')}
+                </a>
+              </li>
+              <li>
+                <a href={`/${lang}/actividades/`} class="hover:text-white transition-colors">
+                  {t(lang, 'nav.activities')}
+                </a>
+              </li>
+              <li>
+                <a href={`/${lang}/transparencia/`} class="hover:text-white transition-colors">
+                  {t(lang, 'nav.transparency')}
+                </a>
+              </li>
+              <li>
+                <a href={`/${lang}/equipo/`} class="hover:text-white transition-colors">
+                  {t(lang, 'nav.team')}
+                </a>
+              </li>
+              <li>
+                <a href={`/${lang}/contacto/`} class="hover:text-white transition-colors">
+                  {t(lang, 'nav.contact')}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact -->
+          <div>
+            <h3 class="text-xs font-semibold uppercase tracking-widest text-dacsa-amber mb-3">
+              Contacto
+            </h3>
+            <address class="not-italic text-sm text-gray-400 space-y-1">
+              <p>Facultad de Economía, Despacho 5C04</p>
+              <p>Avda. Tarongers, Valencia</p>
+              <p>
+                <a href="mailto:catedradacsa@uv.es" class="hover:text-white transition-colors">
+                  catedradacsa@uv.es
+                </a>
+              </p>
+              <p>+34 963 828 369</p>
+            </address>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500"
+        >
+          <p>
+            &copy; {new Date().getFullYear()} Cátedra DACSA-UV — {t(lang, 'footer.rights')}
+          </p>
+          <p>
+            {t(lang, 'footer.funded')}
+            <a
+              href="https://www.dacsa.com"
+              target="_blank"
+              rel="noopener"
+              class="text-dacsa-amber hover:text-amber-300"
+            >
+              DACSA Group
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggle?.addEventListener('click', () => {
+        const isOpen = menu?.classList.toggle('hidden');
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+      });
+    </script>
+  </body>
+</html>

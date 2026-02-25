@@ -1,0 +1,18 @@
+{
+  "nav.home": "Inicio",
+  "nav.news": "Noticias",
+  "nav.activities": "Actividades",
+  "nav.transparency": "Transparencia",
+  "nav.team": "Equipo",
+  "nav.companies": "Empresas",
+  "nav.contact": "Contacto",
+  "footer.rights": "Todos los derechos reservados",
+  "footer.funded": "Financiada por",
+  "news.readmore": "Leer más",
+  "news.category.lectures": "Conferencias",
+  "news.category.awards": "Premios",
+  "news.category.press": "Prensa",
+  "news.category.activities": "Actividades",
+  "hero.cta.news": "Ver noticias",
+  "hero.cta.contact": "Contactar"
+}

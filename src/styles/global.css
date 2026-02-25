@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* DACSA Brand Colors */
+  --color-dacsa-amber: #ffae00;
+  --color-dacsa-green: #046a38;
+  --color-dacsa-dark: #1b1b1b;
+  --color-dacsa-gray: #727475;
+
+  /* Typography */
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}

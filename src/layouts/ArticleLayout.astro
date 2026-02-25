@@ -1,0 +1,144 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { Locale } from '../i18n/index.ts';
+
+interface SidebarArticle {
+  slug: string;
+  title: string;
+  date: Date;
+  category: string;
+}
+
+interface Props {
+  title: string;
+  date: Date;
+  category: string;
+  lang: Locale;
+  breadcrumbTitle: string;
+  sidebarArticles?: SidebarArticle[];
+}
+
+const { title, date, category, lang, breadcrumbTitle, sidebarArticles = [] } = Astro.props;
+
+const categoryConfig: Record<string, { label: string; color: string }> = {
+  lectures: { label: 'Conferencias', color: 'bg-blue-100 text-blue-800' },
+  awards: { label: 'Premios', color: 'bg-amber-100 text-dacsa-amber' },
+  press: { label: 'Prensa', color: 'bg-gray-100 text-gray-700' },
+  activities: { label: 'Actividades', color: 'bg-green-100 text-dacsa-green' },
+};
+
+const cat = categoryConfig[category] ?? { label: category, color: 'bg-gray-100 text-gray-700' };
+
+function formatDate(d: Date): string {
+  return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<!-- Breadcrumb bar -->
+<div class="bg-gray-50 border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <nav aria-label="Breadcrumb">
+      <ol class="flex items-center gap-2 text-sm text-dacsa-gray flex-wrap">
+        <li>
+          <a href={`/${lang}/`} class="hover:text-dacsa-amber transition-colors">Inicio</a>
+        </li>
+        <li aria-hidden="true" class="text-gray-300">/</li>
+        <li>
+          <a href={`/${lang}/noticias/`} class="hover:text-dacsa-amber transition-colors">Noticias</a>
+        </li>
+        <li aria-hidden="true" class="text-gray-300">/</li>
+        <li class="text-dacsa-dark font-medium truncate max-w-xs sm:max-w-sm" aria-current="page">
+          {breadcrumbTitle}
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Main content area -->
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="lg:grid lg:grid-cols-[1fr_280px] lg:gap-12 xl:gap-16">
+
+    <!-- Article column -->
+    <article class="min-w-0">
+
+      <!-- Category pill + date -->
+      <div class="flex items-center gap-3 mb-5">
+        <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${cat.color}`}>
+          {cat.label}
+        </span>
+        <time
+          datetime={date.toISOString().split('T')[0]}
+          class="text-sm text-dacsa-gray"
+        >
+          {formatDate(date)}
+        </time>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-dacsa-dark leading-tight mb-8">
+        {title}
+      </h1>
+
+      <!-- Article body — prose styles from @tailwindcss/typography -->
+      <div class="prose prose-gray max-w-none
+        prose-headings:text-dacsa-dark prose-headings:font-semibold
+        prose-a:text-dacsa-amber prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-dacsa-dark
+        prose-p:text-dacsa-gray prose-p:leading-relaxed">
+        <slot />
+      </div>
+
+      <!-- Back link -->
+      <div class="mt-12 pt-8 border-t border-gray-100">
+        <a
+          href={`/${lang}/noticias/`}
+          class="inline-flex items-center gap-2 text-sm font-semibold text-dacsa-gray hover:text-dacsa-amber transition-colors"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+          </svg>
+          Volver a noticias
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar: shown only on desktop -->
+    {sidebarArticles.length > 0 && (
+      <aside class="hidden lg:block" aria-labelledby="sidebar-heading">
+        <div class="sticky top-24">
+          <h2 id="sidebar-heading" class="text-xs font-semibold uppercase tracking-widest text-dacsa-amber mb-5">
+            Más noticias
+          </h2>
+          <ul class="space-y-5 list-none">
+            {sidebarArticles.map((item) => {
+              const itemCat = categoryConfig[item.category] ?? { label: item.category, color: 'bg-gray-100 text-gray-700' };
+              return (
+                <li class="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                  <div class="flex items-center gap-2 mb-1.5">
+                    <span class={`text-xs font-semibold px-2 py-0.5 rounded-full ${itemCat.color}`}>
+                      {itemCat.label}
+                    </span>
+                    <time
+                      datetime={item.date.toISOString().split('T')[0]}
+                      class="text-xs text-dacsa-gray"
+                    >
+                      {formatDate(item.date)}
+                    </time>
+                  </div>
+                  <a
+                    href={`/${lang}/noticias/${item.slug}/`}
+                    class="text-sm font-medium text-dacsa-dark hover:text-dacsa-amber transition-colors leading-snug block"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </aside>
+    )}
+
+  </div>
+</div>

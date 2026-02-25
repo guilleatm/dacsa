@@ -1,0 +1,365 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch the 3 most recent non-draft articles
+const allNews = await getCollection('news-es', ({ data }) => !data.draft);
+const latestNews = allNews
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+
+// Category display config
+const categoryConfig = {
+  lectures: { label: 'Conferencias', color: 'bg-blue-100 text-blue-800' },
+  awards: { label: 'Premios', color: 'bg-amber-100 text-dacsa-amber' },
+  press: { label: 'Prensa', color: 'bg-gray-100 text-gray-700' },
+  activities: { label: 'Actividades', color: 'bg-green-100 text-dacsa-green' },
+};
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<BaseLayout title="Inicio" lang="es" description="Cátedra de Excelencia y Desarrollo en Emprendimiento: de Estudiante a Empresario — Universitat de Valencia. Formación, mentoring y red empresarial para estudiantes universitarios.">
+
+  <!-- ========================================================
+       SECTION 1 — HERO
+       ======================================================== -->
+  <section
+    class="relative bg-dacsa-dark min-h-screen flex items-center overflow-hidden"
+    aria-label="Hero: De Estudiante a Empresario"
+  >
+    <!-- Decorative amber left-border accent -->
+    <div
+      class="absolute left-0 top-0 bottom-0 w-1 bg-dacsa-amber"
+      aria-hidden="true"
+    ></div>
+
+    <!-- Subtle background texture: large faded amber corn-kernel shape -->
+    <div
+      class="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-5 bg-dacsa-amber blur-3xl pointer-events-none"
+      aria-hidden="true"
+    ></div>
+
+    <div class="max-w-6xl mx-auto px-8 sm:px-10 lg:px-16 py-24 md:py-32 relative z-10 w-full">
+      <!-- Eyebrow label -->
+      <p class="text-dacsa-amber text-sm font-semibold tracking-widest uppercase mb-6">
+        Cátedra DACSA · Universitat de Valencia
+      </p>
+
+      <!-- Main headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
+        De Estudiante a
+        <span class="text-dacsa-amber"> Empresario</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mb-10">
+        Impulsamos el talento emprendedor en la Universitat de Valencia desde 2013.
+        Formación, mentoring y una red empresarial real para estudiantes con visión.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="/es/noticias/"
+          class="inline-flex items-center justify-center px-7 py-3.5 bg-dacsa-amber text-dacsa-dark font-semibold text-sm rounded-sm hover:bg-amber-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dacsa-amber"
+        >
+          Ver noticias
+        </a>
+        <a
+          href="/es/equipo/"
+          class="inline-flex items-center justify-center px-7 py-3.5 border border-white text-white font-semibold text-sm rounded-sm hover:bg-white hover:text-dacsa-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        >
+          Conoce la cátedra
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 2 — IMPACT METRICS STRIP
+       ======================================================== -->
+  <section class="bg-gray-50 border-y border-gray-200" aria-label="Impacto de la cátedra">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <dl class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+        <div class="flex flex-col items-center gap-1">
+          <dt class="text-sm text-dacsa-gray font-medium order-last mt-1">Ediciones</dt>
+          <dd class="text-5xl font-bold text-dacsa-amber leading-none">11</dd>
+        </div>
+
+        <div class="flex flex-col items-center gap-1">
+          <dt class="text-sm text-dacsa-gray font-medium order-last mt-1">Estudiantes formados</dt>
+          <dd class="text-5xl font-bold text-dacsa-amber leading-none">+500</dd>
+        </div>
+
+        <div class="flex flex-col items-center gap-1">
+          <dt class="text-sm text-dacsa-gray font-medium order-last mt-1">Proyectos evaluados</dt>
+          <dd class="text-5xl font-bold text-dacsa-amber leading-none">+50</dd>
+        </div>
+
+        <div class="flex flex-col items-center gap-1">
+          <dt class="text-sm text-dacsa-gray font-medium order-last mt-1">Años impulsando el emprendimiento</dt>
+          <dd class="text-5xl font-bold text-dacsa-amber leading-none">10+</dd>
+        </div>
+
+      </dl>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 3 — WHAT WE DO (3 PILLARS)
+       ======================================================== -->
+  <section class="bg-white" aria-labelledby="pillars-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+      <header class="mb-12 text-center">
+        <h2 id="pillars-heading" class="text-3xl sm:text-4xl font-bold text-dacsa-dark">
+          ¿Qué hace la Cátedra?
+        </h2>
+      </header>
+
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-8 list-none" role="list">
+
+        <!-- Pillar 1: Knowledge Transfer -->
+        <li class="flex flex-col gap-5 p-8 border border-gray-100 rounded-sm hover:border-dacsa-amber hover:shadow-md transition-all group">
+          <div
+            class="w-12 h-12 flex items-center justify-center bg-amber-50 rounded-sm text-dacsa-amber group-hover:bg-dacsa-amber group-hover:text-white transition-colors"
+            aria-hidden="true"
+          >
+            <!-- Icon: presentation / knowledge transfer -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.966 8.966 0 00-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-dacsa-dark mb-2">Transferencia de Conocimiento</h3>
+            <p class="text-sm text-dacsa-gray leading-relaxed">
+              Conferencias, seminarios y talleres impartidos por empresarios y expertos del ecosistema emprendedor valenciano.
+            </p>
+          </div>
+        </li>
+
+        <!-- Pillar 2: Viability Plan Award -->
+        <li class="flex flex-col gap-5 p-8 border border-gray-100 rounded-sm hover:border-dacsa-amber hover:shadow-md transition-all group">
+          <div
+            class="w-12 h-12 flex items-center justify-center bg-amber-50 rounded-sm text-dacsa-amber group-hover:bg-dacsa-amber group-hover:text-white transition-colors"
+            aria-hidden="true"
+          >
+            <!-- Icon: trophy / award -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-dacsa-dark mb-2">Concurso de Emprendimiento</h3>
+            <p class="text-sm text-dacsa-gray leading-relaxed">
+              El Premio al Plan de Viabilidad: un concurso anual donde estudiantes desarrollan proyectos empresariales reales evaluados por un jurado profesional.
+            </p>
+          </div>
+        </li>
+
+        <!-- Pillar 3: Business Network -->
+        <li class="flex flex-col gap-5 p-8 border border-gray-100 rounded-sm hover:border-dacsa-amber hover:shadow-md transition-all group">
+          <div
+            class="w-12 h-12 flex items-center justify-center bg-amber-50 rounded-sm text-dacsa-amber group-hover:bg-dacsa-amber group-hover:text-white transition-colors"
+            aria-hidden="true"
+          >
+            <!-- Icon: network / connections -->
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-dacsa-dark mb-2">Red Empresarial</h3>
+            <p class="text-sm text-dacsa-gray leading-relaxed">
+              Conectamos estudiantes con empresas, inversores y emprendedores. La cátedra es un puente entre la universidad y el mundo empresarial.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 4 — LATEST NEWS
+       ======================================================== -->
+  <section class="bg-gray-50 border-t border-gray-200" aria-labelledby="news-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+      <header class="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <h2 id="news-heading" class="text-3xl sm:text-4xl font-bold text-dacsa-dark">
+          Últimas noticias
+        </h2>
+        <a
+          href="/es/noticias/"
+          class="text-sm font-semibold text-dacsa-amber hover:text-amber-600 transition-colors whitespace-nowrap"
+        >
+          Ver todas las noticias &rarr;
+        </a>
+      </header>
+
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none" role="list">
+        {latestNews.map((article) => {
+          const cat = categoryConfig[article.data.category];
+          return (
+            <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all">
+              <article class="flex flex-col h-full p-6 gap-4">
+
+                <!-- Category + Date row -->
+                <div class="flex items-center justify-between gap-3">
+                  <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${cat.color}`}>
+                    {cat.label}
+                  </span>
+                  <time
+                    datetime={article.data.date.toISOString().split('T')[0]}
+                    class="text-xs text-dacsa-gray shrink-0"
+                  >
+                    {formatDate(article.data.date)}
+                  </time>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-base font-semibold text-dacsa-dark leading-snug">
+                  {article.data.title}
+                </h3>
+
+                <!-- Summary -->
+                <p class="text-sm text-dacsa-gray leading-relaxed flex-grow">
+                  {article.data.summary}
+                </p>
+
+                <!-- Read more -->
+                <a
+                  href={`/es/noticias/${article.slug}/`}
+                  class="text-sm font-semibold text-dacsa-amber hover:text-amber-600 transition-colors mt-auto"
+                  aria-label={`Leer más sobre: ${article.data.title}`}
+                >
+                  Leer más &rarr;
+                </a>
+
+              </article>
+            </li>
+          );
+        })}
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 5 — TESTIMONIAL
+       ======================================================== -->
+  <section class="bg-dacsa-dark" aria-labelledby="testimonial-heading">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+
+      <!-- Decorative large open-quote -->
+      <div
+        class="text-8xl font-serif text-dacsa-amber leading-none mb-4 select-none"
+        aria-hidden="true"
+      >
+        &ldquo;
+      </div>
+
+      <h2 id="testimonial-heading" class="sr-only">Testimonio de alumni</h2>
+
+      <blockquote class="text-lg sm:text-xl text-gray-200 leading-relaxed italic mb-8">
+        Participar en el Premio al Plan de Viabilidad fue el punto de partida de mi empresa.
+        El apoyo de la cátedra, la red de contactos y el feedback del jurado fueron clave
+        para convertir una idea en un proyecto real.
+      </blockquote>
+
+      <footer class="text-sm text-gray-400">
+        <cite class="not-italic">
+          <strong class="text-white font-semibold">Alumni de la Cátedra DACSA-UV</strong>
+          <br />
+          <!-- NOTE: No confirmed real testimonial exists. This is a representative placeholder. -->
+          <span class="text-dacsa-gray text-xs italic">testimonio representativo</span>
+        </cite>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION 6 — FUNDER LOGOS STRIP
+       ======================================================== -->
+  <section class="bg-white border-t border-gray-100" aria-labelledby="funders-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+      <p
+        id="funders-heading"
+        class="text-xs font-semibold uppercase tracking-widest text-dacsa-gray text-center mb-10"
+      >
+        Con el apoyo de
+      </p>
+
+      <ul
+        class="flex flex-wrap items-center justify-center gap-10 sm:gap-16 list-none"
+        role="list"
+        aria-label="Entidades colaboradoras"
+      >
+
+        <!-- DACSA Group — SVG logo -->
+        <li>
+          <a
+            href="https://www.dacsa.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            aria-label="DACSA Group (abre en nueva pestaña)"
+          >
+            <img
+              src="/brand/dacsa-group.svg"
+              alt="DACSA Group"
+              width="140"
+              height="48"
+              loading="lazy"
+            />
+          </a>
+        </li>
+
+        <!-- Universitat de Valencia — text placeholder (logo not yet downloaded) -->
+        <li>
+          <!-- NOTE: Text placeholder — replace with official UV logo SVG when available -->
+          <a
+            href="https://www.uv.es"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block opacity-50 hover:opacity-100 transition-opacity duration-300"
+            aria-label="Universitat de Valencia (abre en nueva pestaña)"
+          >
+            <span
+              class="inline-flex items-center gap-1.5 font-semibold text-dacsa-dark text-sm tracking-tight border border-gray-300 rounded px-4 py-2 grayscale hover:grayscale-0 hover:border-dacsa-green hover:text-dacsa-green transition-all duration-300"
+            >
+              Universitat de Valencia
+            </span>
+          </a>
+        </li>
+
+        <!-- IUDESCOOP — text placeholder -->
+        <li>
+          <!-- NOTE: Text placeholder — replace with official IUDESCOOP logo SVG when available -->
+          <a
+            href="https://www.uv.es/iudescoop"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block opacity-50 hover:opacity-100 transition-opacity duration-300"
+            aria-label="IUDESCOOP — Institut Universitari d'Economia Social i Cooperativa (abre en nueva pestaña)"
+          >
+            <span
+              class="inline-flex items-center gap-1.5 font-semibold text-dacsa-dark text-sm tracking-tight border border-gray-300 rounded px-4 py-2 grayscale hover:grayscale-0 hover:border-dacsa-amber hover:text-dacsa-amber transition-all duration-300"
+            >
+              IUDESCOOP · UV
+            </span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+</BaseLayout>

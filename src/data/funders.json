@@ -1,0 +1,23 @@
+[
+  {
+    "name": "DACSA Group",
+    "role": "Financiador principal",
+    "url": "https://www.dacsa.com",
+    "logo": "/brand/dacsa-group.svg",
+    "description": "Grupo empresarial familiar valenciano fundado en 1968, líder en la transformación de cereales en España y Europa. Financia íntegramente la Cátedra DACSA-UV desde su fundación en 2013."
+  },
+  {
+    "name": "Universitat de Valencia",
+    "role": "Institución anfitriona",
+    "url": "https://www.uv.es",
+    "logo": null,
+    "description": "La Universitat de Valencia acoge la cátedra en la Facultad de Economía y proporciona el marco académico e institucional para el desarrollo de sus actividades."
+  },
+  {
+    "name": "IUDESCOOP",
+    "role": "Socio institucional",
+    "url": "https://www.uv.es/iudescoop",
+    "logo": null,
+    "description": "Institut Universitari d'Economia Social i Cooperativa de la UV. Coorganiza actividades relacionadas con el emprendimiento social y el modelo cooperativo."
+  }
+]

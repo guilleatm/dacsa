@@ -1,0 +1,140 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import activities from '../../data/activities.json';
+
+// Type dot colors per activity type
+const typeConfig: Record<string, { dot: string; label: string }> = {
+  awards:     { dot: 'bg-dacsa-amber',  label: 'Premio'       },
+  lectures:   { dot: 'bg-blue-500',     label: 'Conferencia'  },
+  activities: { dot: 'bg-dacsa-green',  label: 'Actividad'    },
+};
+---
+
+<BaseLayout
+  title="Actividades"
+  lang="es"
+  description="Actividades desarrolladas por la Cátedra DACSA-UV desde su fundación en 2013. Conferencias, premios y talleres para estudiantes emprendedores de la Universitat de Valencia."
+>
+
+  <!-- ====================================================
+       PAGE HEADER
+       ==================================================== -->
+  <section class="bg-dacsa-dark text-white" aria-labelledby="activities-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <p class="text-dacsa-amber text-sm font-semibold tracking-widest uppercase mb-4">
+        Cátedra DACSA · Universitat de Valencia
+      </p>
+      <h1 id="activities-heading" class="text-4xl sm:text-5xl font-bold mb-4">
+        Actividades
+      </h1>
+      <p class="text-gray-300 text-lg leading-relaxed max-w-2xl">
+        Estas son las actividades desarrolladas por la Cátedra DACSA-UV desde su fundación en
+        2013. Cada euro de financiación se destina íntegramente a formación, premios y
+        actividades para estudiantes emprendedores.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       LEGEND
+       ==================================================== -->
+  <section class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <ul class="flex flex-wrap gap-6 text-sm text-dacsa-gray" role="list" aria-label="Leyenda de tipos de actividad">
+        {Object.entries(typeConfig).map(([, cfg]) => (
+          <li class="flex items-center gap-2">
+            <span class={`w-2.5 h-2.5 rounded-full shrink-0 ${cfg.dot}`} aria-hidden="true"></span>
+            {cfg.label}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       VERTICAL TIMELINE
+       ==================================================== -->
+  <section class="bg-white" aria-label="Historial de actividades por año">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      <ol class="relative list-none" aria-label="Línea de tiempo de actividades">
+        {activities.map((yearBlock, index) => (
+          <li class="relative md:grid md:grid-cols-[9rem_1fr] md:gap-10 mb-12 last:mb-0">
+
+            <!-- Vertical connector line (hidden for last item) -->
+            {index < activities.length - 1 && (
+              <div
+                class="hidden md:block absolute left-[4.25rem] top-10 bottom-0 w-px bg-gray-200"
+                aria-hidden="true"
+              ></div>
+            )}
+
+            <!-- Year column -->
+            <div class="mb-4 md:mb-0 md:pt-1">
+              <div class="md:text-right">
+                <span class="text-3xl font-bold text-dacsa-amber leading-none block">
+                  {yearBlock.year}
+                </span>
+                <span class="text-xs font-medium text-dacsa-gray mt-1 block leading-snug">
+                  {yearBlock.highlight}
+                </span>
+              </div>
+            </div>
+
+            <!-- Items column -->
+            <div class="relative pl-4 md:pl-0 border-l md:border-l-0 border-gray-200">
+
+              <!-- Mobile: year dot on connector line -->
+              <div
+                class="md:hidden absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-dacsa-amber border-2 border-white"
+                aria-hidden="true"
+              ></div>
+
+              <ul class="space-y-5 list-none" role="list">
+                {yearBlock.items.map((item) => {
+                  const cfg = typeConfig[item.type] ?? typeConfig.activities;
+                  return (
+                    <li class="flex items-start gap-3">
+                      <span
+                        class={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${cfg.dot}`}
+                        aria-label={cfg.label}
+                      ></span>
+                      <div>
+                        <h2 class="text-base font-semibold text-dacsa-dark leading-snug">
+                          {item.title}
+                        </h2>
+                        <p class="text-sm text-dacsa-gray leading-relaxed mt-1">
+                          {item.description}
+                        </p>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </li>
+        ))}
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       CTA STRIP
+       ==================================================== -->
+  <section class="bg-gray-50 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <p class="font-semibold text-dacsa-dark">¿Quieres saber cómo se financian estas actividades?</p>
+        <p class="text-sm text-dacsa-gray mt-1">Consulta nuestra página de transparencia para ver el uso de los fondos.</p>
+      </div>
+      <a
+        href="/es/transparencia/"
+        class="inline-flex items-center justify-center px-6 py-3 bg-dacsa-amber text-dacsa-dark font-semibold text-sm rounded-sm hover:bg-amber-400 transition-colors whitespace-nowrap"
+      >
+        Ver transparencia &rarr;
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

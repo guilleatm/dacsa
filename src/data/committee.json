@@ -1,0 +1,36 @@
+{
+  "directors": [
+    {
+      "name": "Carlos Lassala",
+      "role": "Director de la Cátedra",
+      "affiliation": "Universitat de Valencia",
+      "email": "carlos.lassala@uv.es"
+    },
+    {
+      "name": "Domingo Ribeiro",
+      "role": "Co-Director de la Cátedra",
+      "affiliation": "Universitat de Valencia",
+      "email": null
+    }
+  ],
+  "coordinators": [
+    {
+      "name": "Samuel Ribeiro Navarrete",
+      "role": "Coordinador",
+      "affiliation": "Universitat de Valencia"
+    },
+    {
+      "name": "Yanet Llaguno",
+      "role": "Coordinadora",
+      "affiliation": "Universitat de Valencia"
+    }
+  ],
+  "committee": [
+    { "name": "Miembro del Comité Asesor 1", "affiliation": "Empresa valenciana", "role": "Asesor" },
+    { "name": "Miembro del Comité Asesor 2", "affiliation": "Universidad", "role": "Asesor académico" },
+    { "name": "Miembro del Comité Asesor 3", "affiliation": "Consultoría", "role": "Asesor empresarial" },
+    { "name": "Miembro del Comité Asesor 4", "affiliation": "Empresa valenciana", "role": "Asesor" },
+    { "name": "Miembro del Comité Asesor 5", "affiliation": "Inversión", "role": "Asesor financiero" },
+    { "name": "Miembro del Comité Asesor 6", "affiliation": "Empresa valenciana", "role": "Asesor" }
+  ]
+}

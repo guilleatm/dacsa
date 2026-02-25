@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import committee from '../../data/committee.json';
+
+/** Extract initials from a full name (up to 2 characters) */
+function initials(name: string): string {
+  return name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join('');
+}
+---
+
+<BaseLayout
+  title="Equipo"
+  lang="es"
+  description="Conoce al equipo de la Cátedra DACSA-UV: directores, coordinadores y el comité asesor formado por profesionales del ecosistema emprendedor valenciano."
+>
+
+  <!-- ====================================================
+       SECTION 1 — PAGE HEADER
+       ==================================================== -->
+  <section class="bg-dacsa-dark text-white" aria-labelledby="team-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <p class="text-dacsa-amber text-sm font-semibold tracking-widest uppercase mb-4">
+        Cátedra DACSA · Universitat de Valencia
+      </p>
+      <h1 id="team-heading" class="text-4xl sm:text-5xl font-bold mb-4">
+        Equipo
+      </h1>
+      <p class="text-gray-300 text-lg leading-relaxed max-w-2xl">
+        La Cátedra DACSA-UV cuenta con un equipo multidisciplinar formado por académicos,
+        coordinadores y un amplio comité asesor integrado por profesionales del mundo empresarial
+        y universitario valenciano.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 2 — DIRECTORS
+       ==================================================== -->
+  <section class="bg-white" aria-labelledby="directors-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      <h2 id="directors-heading" class="text-2xl sm:text-3xl font-bold text-dacsa-dark mb-8">
+        Dirección
+      </h2>
+
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 list-none" role="list">
+        {committee.directors.map((person) => (
+          <li class="border border-gray-100 rounded-sm p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5 hover:border-dacsa-amber hover:shadow-md transition-all">
+
+            <!-- Avatar -->
+            <div
+              class="w-16 h-16 rounded-full bg-dacsa-amber flex items-center justify-center shrink-0"
+              aria-hidden="true"
+            >
+              <span class="text-white font-bold text-xl">{initials(person.name)}</span>
+            </div>
+
+            <!-- Details -->
+            <div>
+              <h3 class="text-lg font-semibold text-dacsa-dark">{person.name}</h3>
+              <p class="text-sm font-medium text-dacsa-amber mt-0.5">{person.role}</p>
+              <p class="text-sm text-dacsa-gray mt-1">{person.affiliation}</p>
+              {person.email && (
+                <a
+                  href={`mailto:${person.email}`}
+                  class="text-sm text-dacsa-gray hover:text-dacsa-amber transition-colors mt-2 inline-block"
+                  aria-label={`Enviar email a ${person.name}`}
+                >
+                  {person.email}
+                </a>
+              )}
+            </div>
+
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 3 — COORDINATORS
+       ==================================================== -->
+  <section class="bg-gray-50 border-y border-gray-200" aria-labelledby="coordinators-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      <h2 id="coordinators-heading" class="text-2xl sm:text-3xl font-bold text-dacsa-dark mb-8">
+        Coordinación
+      </h2>
+
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 list-none" role="list">
+        {committee.coordinators.map((person) => (
+          <li class="bg-white border border-gray-100 rounded-sm p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5 hover:border-dacsa-amber hover:shadow-md transition-all">
+
+            <!-- Avatar -->
+            <div
+              class="w-14 h-14 rounded-full bg-dacsa-amber flex items-center justify-center shrink-0"
+              aria-hidden="true"
+            >
+              <span class="text-white font-bold text-lg">{initials(person.name)}</span>
+            </div>
+
+            <!-- Details -->
+            <div>
+              <h3 class="text-base font-semibold text-dacsa-dark">{person.name}</h3>
+              <p class="text-sm font-medium text-dacsa-amber mt-0.5">{person.role}</p>
+              <p class="text-sm text-dacsa-gray mt-1">{person.affiliation}</p>
+            </div>
+
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 4 — ADVISORY COMMITTEE
+       ==================================================== -->
+  <section class="bg-white" aria-labelledby="committee-heading">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+      <h2 id="committee-heading" class="text-2xl sm:text-3xl font-bold text-dacsa-dark mb-3">
+        Comité Asesor
+      </h2>
+      <p class="text-sm text-dacsa-gray mb-10 max-w-2xl">
+        El comité asesor está formado por más de 25 profesionales de empresas, universidades
+        y entidades del ecosistema emprendedor valenciano.
+      </p>
+
+      <ul
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 list-none"
+        role="list"
+        aria-label="Miembros del comité asesor"
+      >
+        {committee.committee.map((person) => (
+          <li class="border border-gray-100 rounded-sm p-5 flex items-start gap-4 hover:border-gray-200 hover:shadow-sm transition-all">
+
+            <!-- Small avatar -->
+            <div
+              class="w-10 h-10 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0"
+              aria-hidden="true"
+            >
+              <span class="text-dacsa-amber font-semibold text-sm">{initials(person.name)}</span>
+            </div>
+
+            <!-- Details -->
+            <div class="min-w-0">
+              <h3 class="text-sm font-semibold text-dacsa-dark leading-snug">{person.name}</h3>
+              <p class="text-xs text-dacsa-gray mt-0.5">{person.role}</p>
+              <p class="text-xs text-dacsa-gray">{person.affiliation}</p>
+            </div>
+
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  </section>
+
+</BaseLayout>

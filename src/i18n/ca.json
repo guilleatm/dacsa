@@ -1,0 +1,18 @@
+{
+  "nav.home": "Inici",
+  "nav.news": "Notícies",
+  "nav.activities": "Activitats",
+  "nav.transparency": "Transparència",
+  "nav.team": "Equip",
+  "nav.companies": "Empreses",
+  "nav.contact": "Contacte",
+  "footer.rights": "Tots els drets reservats",
+  "footer.funded": "Finançada per",
+  "news.readmore": "Llegir més",
+  "news.category.lectures": "Conferències",
+  "news.category.awards": "Premis",
+  "news.category.press": "Premsa",
+  "news.category.activities": "Activitats",
+  "hero.cta.news": "Veure notícies",
+  "hero.cta.contact": "Contactar"
+}

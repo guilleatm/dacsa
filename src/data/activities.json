@@ -1,0 +1,51 @@
+[
+  {
+    "year": 2024,
+    "highlight": "XI edición del Premio al Plan de Viabilidad",
+    "items": [
+      { "type": "awards", "title": "XI Premio al Plan de Viabilidad", "description": "Convocatoria, evaluación y ceremonia de entrega del premio anual. Participación de estudiantes de la Universitat de Valencia con proyectos empresariales originales." },
+      { "type": "lectures", "title": "Ciclo de conferencias 2023-24", "description": "Serie de conferencias impartidas por empresarios y expertos del ecosistema valenciano durante el curso académico." },
+      { "type": "activities", "title": "Taller de cooperativismo", "description": "Taller práctico en colaboración con IUDESCOOP sobre el modelo cooperativo como alternativa de emprendimiento." }
+    ]
+  },
+  {
+    "year": 2023,
+    "highlight": "X Aniversario de la Cátedra",
+    "items": [
+      { "type": "awards", "title": "X Premio al Plan de Viabilidad", "description": "Edición especial del décimo aniversario. Acto de entrega en el Paraninfo de la Universitat de Valencia." },
+      { "type": "lectures", "title": "Ciclo de conferencias 2022-23", "description": "Conferencias sobre emprendimiento, financiación e innovación empresarial." },
+      { "type": "activities", "title": "Acto de aniversario", "description": "Celebración del décimo aniversario de la cátedra con la participación de ex-premiados, empresarios y representantes institucionales." }
+    ]
+  },
+  {
+    "year": 2022,
+    "highlight": "Vuelta a la presencialidad",
+    "items": [
+      { "type": "awards", "title": "IX Premio al Plan de Viabilidad", "description": "Retorno a la presencialidad completa tras los años de pandemia. Alta participación estudiantil." },
+      { "type": "lectures", "title": "Ciclo de conferencias 2021-22", "description": "Ciclo presencial con ponentes del sector tecnológico, agroalimentario y servicios." }
+    ]
+  },
+  {
+    "year": 2021,
+    "highlight": "Adaptación al formato híbrido",
+    "items": [
+      { "type": "awards", "title": "VIII Premio al Plan de Viabilidad", "description": "Edición híbrida (presencial + telemática) adaptada a las restricciones sanitarias." },
+      { "type": "activities", "title": "Taller de pitch para inversores", "description": "Taller práctico sobre cómo presentar proyectos a business angels e inversores." }
+    ]
+  },
+  {
+    "year": 2020,
+    "highlight": "Respuesta a la pandemia",
+    "items": [
+      { "type": "lectures", "title": "Conferencias en formato online", "description": "La cátedra adaptó su programa de conferencias al formato digital durante el confinamiento." }
+    ]
+  },
+  {
+    "year": 2019,
+    "highlight": "Consolidación del programa",
+    "items": [
+      { "type": "awards", "title": "VII Premio al Plan de Viabilidad", "description": "Séptima edición del premio con creciente participación interuniversitaria." },
+      { "type": "lectures", "title": "Ciclo de conferencias 2019-20", "description": "Conferencias sobre liderazgo, startups y transformación digital." }
+    ]
+  }
+]

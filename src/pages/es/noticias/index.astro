@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch all non-draft articles
+const allNews = await getCollection('news-es', ({ data }) => !data.draft);
+
+// Category config
+const categoryConfig = {
+  lectures: { label: 'Conferencias', color: 'bg-blue-100 text-blue-800' },
+  awards: { label: 'Premios', color: 'bg-amber-100 text-dacsa-amber' },
+  press: { label: 'Prensa', color: 'bg-gray-100 text-gray-700' },
+  activities: { label: 'Actividades', color: 'bg-green-100 text-dacsa-green' },
+} as const;
+
+type CategoryKey = keyof typeof categoryConfig;
+
+// Category filter tabs definition
+const filterTabs: { key: string; label: string }[] = [
+  { key: '', label: 'Todas' },
+  { key: 'lectures', label: 'Conferencias' },
+  { key: 'awards', label: 'Premios' },
+  { key: 'activities', label: 'Actividades' },
+  { key: 'press', label: 'Prensa' },
+];
+
+// Read active category from query param
+const activeCat = Astro.url.searchParams.get('cat') ?? '';
+
+// Filter and sort articles
+const filteredNews = allNews
+  .filter((a) => activeCat === '' || a.data.category === activeCat)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<BaseLayout title="Noticias" lang="es" description="Todas las noticias, conferencias, premios y actividades de la Cátedra DACSA-UV.">
+
+  <!-- Page hero header -->
+  <section class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <!-- Breadcrumb -->
+      <nav aria-label="Breadcrumb" class="mb-4">
+        <ol class="flex items-center gap-2 text-sm text-dacsa-gray">
+          <li>
+            <a href="/es/" class="hover:text-dacsa-amber transition-colors">Inicio</a>
+          </li>
+          <li aria-hidden="true" class="text-gray-300">/</li>
+          <li class="text-dacsa-dark font-medium" aria-current="page">Noticias</li>
+        </ol>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-dacsa-dark">Noticias</h1>
+    </div>
+  </section>
+
+  <!-- Filter tabs + article grid -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+      <!-- Category filter tabs -->
+      <nav aria-label="Filtrar por categoría" class="mb-3">
+        <ul class="flex flex-wrap gap-1 border-b border-gray-200 list-none" role="list">
+          {filterTabs.map((tab) => {
+            const isActive = activeCat === tab.key;
+            const href = tab.key === '' ? '/es/noticias/' : `/es/noticias/?cat=${tab.key}`;
+            return (
+              <li>
+                <a
+                  href={href}
+                  class={[
+                    'inline-block px-4 py-2.5 text-sm font-medium transition-colors border-b-2 -mb-px',
+                    isActive
+                      ? 'border-dacsa-amber text-dacsa-dark'
+                      : 'border-transparent text-dacsa-gray hover:text-dacsa-dark hover:border-gray-300',
+                  ].join(' ')}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {tab.label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+
+      <!-- Article count -->
+      <p class="text-sm text-dacsa-gray mb-8">
+        {filteredNews.length} {filteredNews.length === 1 ? 'noticia' : 'noticias'}
+      </p>
+
+      <!-- Article grid -->
+      {filteredNews.length > 0 ? (
+        <ul
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none"
+          role="list"
+        >
+          {filteredNews.map((article) => {
+            const cat = categoryConfig[article.data.category as CategoryKey];
+            return (
+              <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all">
+                <article class="flex flex-col h-full p-6 gap-4">
+
+                  <!-- Category + Date row -->
+                  <div class="flex items-center justify-between gap-3">
+                    <span class={`text-xs font-semibold px-2.5 py-1 rounded-full ${cat.color}`}>
+                      {cat.label}
+                    </span>
+                    <time
+                      datetime={article.data.date.toISOString().split('T')[0]}
+                      class="text-xs text-dacsa-gray shrink-0"
+                    >
+                      {formatDate(article.data.date)}
+                    </time>
+                  </div>
+
+                  <!-- Title -->
+                  <h2 class="text-base font-semibold text-dacsa-dark leading-snug">
+                    {article.data.title}
+                  </h2>
+
+                  <!-- Summary -->
+                  <p class="text-sm text-dacsa-gray leading-relaxed flex-grow">
+                    {article.data.summary}
+                  </p>
+
+                  <!-- Read more -->
+                  <a
+                    href={`/es/noticias/${article.slug}/`}
+                    class="text-sm font-semibold text-dacsa-amber hover:text-amber-600 transition-colors mt-auto"
+                    aria-label={`Leer más sobre: ${article.data.title}`}
+                  >
+                    Leer más &rarr;
+                  </a>
+
+                </article>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        <p class="text-dacsa-gray text-sm py-12 text-center">
+          No hay noticias en esta categoría.
+        </p>
+      )}
+
+    </div>
+  </section>
+
+</BaseLayout>

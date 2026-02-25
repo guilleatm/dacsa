@@ -1,0 +1,18 @@
+{
+  "nav.home": "Home",
+  "nav.news": "News",
+  "nav.activities": "Activities",
+  "nav.transparency": "Transparency",
+  "nav.team": "Team",
+  "nav.companies": "Companies",
+  "nav.contact": "Contact",
+  "footer.rights": "All rights reserved",
+  "footer.funded": "Funded by",
+  "news.readmore": "Read more",
+  "news.category.lectures": "Lectures",
+  "news.category.awards": "Awards",
+  "news.category.press": "Press",
+  "news.category.activities": "Activities",
+  "hero.cta.news": "View news",
+  "hero.cta.contact": "Contact us"
+}
