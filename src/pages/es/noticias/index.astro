@@ -107,7 +107,7 @@ function formatDate(date: Date): string {
                   <!-- Article image -->
                   {article.data.image && (
                     <img
-                      src={article.data.image}
+                      src={`${import.meta.env.BASE_URL}${article.data.image.slice(1)}`}
                       alt={article.data.title}
                       width="400"
                       height="192"

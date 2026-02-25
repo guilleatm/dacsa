@@ -85,7 +85,7 @@ function formatDate(date: Date): string {
         <div class="hidden lg:block relative" aria-hidden="true">
           <div class="relative rounded-sm overflow-hidden">
             <img
-              src="/images/legacy/Clausura_2022_1.jpg"
+              src={`${import.meta.env.BASE_URL}images/legacy/Clausura_2022_1.jpg`}
               alt="Ceremonia de entrega del Premio al Plan de Viabilidad de la Cátedra DACSA-UV"
               width="600"
               height="450"
@@ -141,7 +141,7 @@ function formatDate(date: Date): string {
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 h-52 sm:h-64">
         <div class="overflow-hidden rounded-sm">
           <img
-            src="/images/legacy/img1.png"
+            src={`${import.meta.env.BASE_URL}images/legacy/img1.png`}
             alt="Panel de presentación de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
             width="600"
             height="400"
@@ -151,7 +151,7 @@ function formatDate(date: Date): string {
         </div>
         <div class="hidden sm:block overflow-hidden rounded-sm">
           <img
-            src="/images/legacy/IMG_6278.jpg"
+            src={`${import.meta.env.BASE_URL}images/legacy/IMG_6278.jpg`}
             alt="Jurado evaluando los proyectos del Premio al Plan de Viabilidad DACSA-UV"
             width="600"
             height="400"
@@ -161,7 +161,7 @@ function formatDate(date: Date): string {
         </div>
         <div class="overflow-hidden rounded-sm">
           <img
-            src="/images/legacy/Clausura_2022_2.jpg"
+            src={`${import.meta.env.BASE_URL}images/legacy/Clausura_2022_2.jpg`}
             alt="Ceremonia de clausura del Premio al Plan de Viabilidad DACSA-UV"
             width="600"
             height="400"
@@ -275,7 +275,7 @@ function formatDate(date: Date): string {
                 <!-- Article image -->
                 {article.data.image && (
                   <img
-                    src={article.data.image}
+                    src={`${import.meta.env.BASE_URL}${article.data.image.slice(1)}`}
                     alt={article.data.title}
                     width="400"
                     height="192"
@@ -391,7 +391,7 @@ function formatDate(date: Date): string {
             aria-label="DACSA Group (abre en nueva pestaña)"
           >
             <img
-              src="/brand/dacsa-group.svg"
+              src={`${import.meta.env.BASE_URL}brand/dacsa-group.svg`}
               alt="DACSA Group"
               width="140"
               height="48"
