@@ -3,6 +3,7 @@ title: "Conferencia: Vías de financiación para startups universitarias"
 date: 2024-03-15
 category: lectures
 summary: "Un experto en capital riesgo y financiación alternativa expuso ante los estudiantes las principales vías para financiar un proyecto empresarial desde cero."
+image: "/images/legacy/Foto_conferencia_1b_Jose_Luis.jpg"
 draft: false
 ---
 

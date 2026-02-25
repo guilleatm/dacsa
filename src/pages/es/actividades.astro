@@ -90,27 +90,44 @@ const typeConfig: Record<string, { dot: string; label: string }> = {
                 aria-hidden="true"
               ></div>
 
-              <ul class="space-y-5 list-none" role="list">
-                {yearBlock.items.map((item) => {
-                  const cfg = typeConfig[item.type] ?? typeConfig.activities;
-                  return (
-                    <li class="flex items-start gap-3">
-                      <span
-                        class={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${cfg.dot}`}
-                        aria-label={cfg.label}
-                      ></span>
-                      <div>
-                        <h2 class="text-base font-semibold text-dacsa-dark leading-snug">
-                          {item.title}
-                        </h2>
-                        <p class="text-sm text-dacsa-gray leading-relaxed mt-1">
-                          {item.description}
-                        </p>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
+              <div class="sm:flex sm:gap-6 sm:items-start">
+                <div class="flex-1">
+                  <ul class="space-y-5 list-none" role="list">
+                    {yearBlock.items.map((item) => {
+                      const cfg = typeConfig[item.type] ?? typeConfig.activities;
+                      return (
+                        <li class="flex items-start gap-3">
+                          <span
+                            class={`mt-1.5 w-2.5 h-2.5 rounded-full shrink-0 ${cfg.dot}`}
+                            aria-label={cfg.label}
+                          ></span>
+                          <div>
+                            <h2 class="text-base font-semibold text-dacsa-dark leading-snug">
+                              {item.title}
+                            </h2>
+                            <p class="text-sm text-dacsa-gray leading-relaxed mt-1">
+                              {item.description}
+                            </p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+
+                {yearBlock.image && (
+                  <div class="mt-5 sm:mt-0 sm:shrink-0">
+                    <img
+                      src={yearBlock.image}
+                      alt={yearBlock.imageAlt ?? ''}
+                      width="160"
+                      height="120"
+                      class="w-full sm:w-40 h-28 object-cover rounded-sm border border-gray-100"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+              </div>
             </div>
           </li>
         ))}

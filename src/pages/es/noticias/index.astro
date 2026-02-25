@@ -101,8 +101,22 @@ function formatDate(date: Date): string {
           {filteredNews.map((article) => {
             const cat = categoryConfig[article.data.category as CategoryKey];
             return (
-              <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all">
-                <article class="flex flex-col h-full p-6 gap-4">
+              <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all overflow-hidden">
+                <article class="flex flex-col h-full">
+
+                  <!-- Article image -->
+                  {article.data.image && (
+                    <img
+                      src={article.data.image}
+                      alt={article.data.title}
+                      width="400"
+                      height="192"
+                      class="w-full h-48 object-cover"
+                      loading="lazy"
+                    />
+                  )}
+
+                  <div class="flex flex-col flex-grow p-6 gap-4">
 
                   <!-- Category + Date row -->
                   <div class="flex items-center justify-between gap-3">
@@ -136,6 +150,7 @@ function formatDate(date: Date): string {
                     Leer más &rarr;
                   </a>
 
+                  </div><!-- end inner content padding wrapper -->
                 </article>
               </li>
             );

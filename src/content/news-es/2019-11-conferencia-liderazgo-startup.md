@@ -3,6 +3,7 @@ title: "Conferencia: Liderazgo en startups de alto crecimiento"
 date: 2019-11-05
 category: lectures
 summary: "El fundador de una startup tecnológica valenciana compartió su experiencia liderando equipos en entornos de alta incertidumbre y crecimiento acelerado."
+image: "/images/legacy/MesaP2019.png"
 draft: false
 ---
 En la primera conferencia del curso 2019-2020, el fundador de una startup tecnológica con sede en Valencia compartió su experiencia al frente de un equipo que pasó de 3 a 50 personas en menos de dos años.

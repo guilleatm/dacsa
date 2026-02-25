@@ -3,6 +3,7 @@ title: "XI Edición del Premio al Plan de Viabilidad DACSA-UV"
 date: 2024-06-01
 category: awards
 summary: "La undécima edición del Premio al Plan de Viabilidad reunió a estudiantes de la Universitat de Valencia para presentar sus proyectos empresariales ante un jurado de profesionales del sector."
+image: "/images/legacy/IMG_6279.jpg"
 draft: false
 ---
 

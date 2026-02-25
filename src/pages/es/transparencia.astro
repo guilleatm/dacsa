@@ -84,7 +84,21 @@ import funders from '../../data/funders.json';
 
       <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 list-none" role="list">
         {funders.map((funder) => (
-          <li class="border border-gray-100 rounded-sm p-6 flex flex-col gap-4 hover:border-dacsa-amber hover:shadow-md transition-all">
+          <li class="border border-gray-100 rounded-sm p-6 flex flex-col gap-4 hover:border-dacsa-amber hover:shadow-md transition-all overflow-hidden relative">
+
+            <!-- Corn image decorative background for DACSA Group card -->
+            {funder.name === 'DACSA Group' && (
+              <div class="absolute top-0 right-0 w-24 h-24 opacity-10 pointer-events-none" aria-hidden="true">
+                <img
+                  src="/images/legacy/maiz.png"
+                  alt=""
+                  width="96"
+                  height="96"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            )}
 
             <!-- Logo or text placeholder -->
             <div class="h-14 flex items-center">

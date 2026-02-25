@@ -3,6 +3,7 @@ title: "Taller: Cooperativismo y emprendimiento social"
 date: 2023-12-10
 category: activities
 summary: "En colaboración con IUDESCOOP, la cátedra organizó un taller sobre modelos cooperativos como alternativa de emprendimiento para estudiantes universitarios."
+image: "/images/legacy/Workshop_2022_1.jpg"
 draft: false
 ---
 

@@ -43,37 +43,62 @@ function formatDate(date: Date): string {
     ></div>
 
     <div class="max-w-6xl mx-auto px-8 sm:px-10 lg:px-16 py-24 md:py-32 relative z-10 w-full">
-      <!-- Eyebrow label -->
-      <p class="text-dacsa-amber text-sm font-semibold tracking-widest uppercase mb-6">
-        Cátedra DACSA · Universitat de Valencia
-      </p>
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
 
-      <!-- Main headline -->
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
-        De Estudiante a
-        <span class="text-dacsa-amber"> Empresario</span>
-      </h1>
+        <!-- Text column -->
+        <div>
+          <!-- Eyebrow label -->
+          <p class="text-dacsa-amber text-sm font-semibold tracking-widest uppercase mb-6">
+            Cátedra DACSA · Universitat de Valencia
+          </p>
 
-      <!-- Subheadline -->
-      <p class="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mb-10">
-        Impulsamos el talento emprendedor en la Universitat de Valencia desde 2013.
-        Formación, mentoring y una red empresarial real para estudiantes con visión.
-      </p>
+          <!-- Main headline -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            De Estudiante a
+            <span class="text-dacsa-amber"> Empresario</span>
+          </h1>
 
-      <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a
-          href="/es/noticias/"
-          class="inline-flex items-center justify-center px-7 py-3.5 bg-dacsa-amber text-dacsa-dark font-semibold text-sm rounded-sm hover:bg-amber-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dacsa-amber"
-        >
-          Ver noticias
-        </a>
-        <a
-          href="/es/equipo/"
-          class="inline-flex items-center justify-center px-7 py-3.5 border border-white text-white font-semibold text-sm rounded-sm hover:bg-white hover:text-dacsa-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-        >
-          Conoce la cátedra
-        </a>
+          <!-- Subheadline -->
+          <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-10">
+            Impulsamos el talento emprendedor en la Universitat de Valencia desde 2013.
+            Formación, mentoring y una red empresarial real para estudiantes con visión.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/es/noticias/"
+              class="inline-flex items-center justify-center px-7 py-3.5 bg-dacsa-amber text-dacsa-dark font-semibold text-sm rounded-sm hover:bg-amber-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dacsa-amber"
+            >
+              Ver noticias
+            </a>
+            <a
+              href="/es/equipo/"
+              class="inline-flex items-center justify-center px-7 py-3.5 border border-white text-white font-semibold text-sm rounded-sm hover:bg-white hover:text-dacsa-dark transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Conoce la cátedra
+            </a>
+          </div>
+        </div>
+
+        <!-- Photo column — desktop only -->
+        <div class="hidden lg:block relative" aria-hidden="true">
+          <div class="relative rounded-sm overflow-hidden">
+            <img
+              src="/images/legacy/img3.png"
+              alt="Foto de grupo en el acto de presentación de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+              width="600"
+              height="450"
+              class="w-full h-[420px] object-cover object-center"
+              loading="eager"
+            />
+            <!-- Subtle dark gradient overlay on left edge to blend with hero bg -->
+            <div class="absolute inset-0 bg-gradient-to-r from-dacsa-dark/60 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+          <!-- Decorative amber corner accent -->
+          <div class="absolute -bottom-3 -right-3 w-16 h-16 bg-dacsa-amber opacity-80 rounded-sm pointer-events-none"></div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -108,6 +133,44 @@ function formatDate(date: Date): string {
       </dl>
     </div>
   </section>
+
+  <!-- ========================================================
+       PHOTO STRIP — between metrics and pillars
+       ======================================================== -->
+  <div class="bg-white overflow-hidden" aria-hidden="true">
+    <div class="grid grid-cols-2 sm:grid-cols-3 h-52 sm:h-64">
+      <div class="overflow-hidden">
+        <img
+          src="/images/legacy/img1.png"
+          alt="Panel de presentación de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+          width="600"
+          height="400"
+          class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+      <div class="overflow-hidden">
+        <img
+          src="/images/legacy/publi.png"
+          alt="Público asistente a un acto de la Cátedra DACSA-UV"
+          width="600"
+          height="400"
+          class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+      <div class="hidden sm:block overflow-hidden">
+        <img
+          src="/images/legacy/Clausura_2022_2.jpg"
+          alt="Ceremonia de clausura del Premio al Plan de Viabilidad DACSA-UV"
+          width="600"
+          height="400"
+          class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
 
   <!-- ========================================================
        SECTION 3 — WHAT WE DO (3 PILLARS)
@@ -206,8 +269,22 @@ function formatDate(date: Date): string {
         {latestNews.map((article) => {
           const cat = categoryConfig[article.data.category];
           return (
-            <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all">
-              <article class="flex flex-col h-full p-6 gap-4">
+            <li class="bg-white border border-gray-100 rounded-sm flex flex-col hover:shadow-md hover:border-gray-200 transition-all overflow-hidden">
+              <article class="flex flex-col h-full">
+
+                <!-- Article image -->
+                {article.data.image && (
+                  <img
+                    src={article.data.image}
+                    alt={article.data.title}
+                    width="400"
+                    height="192"
+                    class="w-full h-48 object-cover"
+                    loading="lazy"
+                  />
+                )}
+
+                <div class="flex flex-col flex-grow p-6 gap-4">
 
                 <!-- Category + Date row -->
                 <div class="flex items-center justify-between gap-3">
@@ -241,6 +318,7 @@ function formatDate(date: Date): string {
                   Leer más &rarr;
                 </a>
 
+                </div><!-- end inner content padding wrapper -->
               </article>
             </li>
           );

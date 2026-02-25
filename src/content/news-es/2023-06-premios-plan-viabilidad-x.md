@@ -3,6 +3,7 @@ title: "X Edición del Premio al Plan de Viabilidad — Décimo Aniversario"
 date: 2023-06-05
 category: awards
 summary: "La cátedra celebró su décimo aniversario con la X edición del Premio al Plan de Viabilidad, un hito que consolida su trayectoria como impulsora del talento emprendedor universitario."
+image: "/images/legacy/Clausura_2022_1.jpg"
 draft: false
 ---
 

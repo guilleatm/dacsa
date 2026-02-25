@@ -1,0 +1,814 @@
+[
+  {
+    "filename": "img1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/img1.png",
+    "context": "Homepage of catdacsa/index.html. Shows a panel of 6 people seated at a table with the Catedra Excelencia y Desarrollo en Emprendimiento logo projected on a screen behind them. Facultat d'Economia UV branding visible. Formal inauguration or presentation event.",
+    "suggestedPlacement": "Hero section or 'Sobre la Catedra' / history section of homepage",
+    "altText": "Panel de presentación de la Cátedra de Excelencia y Desarrollo en Emprendimiento en la Facultat d'Economia de la Universitat de València"
+  },
+  {
+    "filename": "img3.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/img3.png",
+    "context": "Homepage of catdacsa/index.html. Shows a group of approximately 10 people standing together in front of the Catedra Excelencia y Desarrollo en Emprendimiento projected screen. Group photo at a formal event at the Facultat d'Economia UV.",
+    "suggestedPlacement": "Hero section or 'Equipo' / about section of homepage",
+    "altText": "Foto de grupo en el acto de presentación de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "maiz.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/maiz.png",
+    "context": "Footer image on all pages of catdacsa site. Shows a close-up photo of corn/maize with a yellow tint overlay — representing the DACSA agricultural brand (maiz = corn in Spanish). Decorative brand identity image.",
+    "suggestedPlacement": "Footer decorative element or 'Sobre DACSA' section",
+    "altText": "Imagen decorativa de mazorca de maíz, símbolo del Grupo DACSA"
+  },
+  {
+    "filename": "publi.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/publi.png",
+    "context": "Footer image on all pages of catdacsa site. Shows an audience of students and professionals seated at a conference or presentation — likely a promotional image of chair activities.",
+    "suggestedPlacement": "Footer or 'Actividades' section promotional image",
+    "altText": "Asistentes a un evento de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "id.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/id.png",
+    "context": "Footer image on all pages of catdacsa site. Shows a laboratory worker in a white coat and hair net working at a PCR/laboratory bench — representing DACSA's scientific/industrial side.",
+    "suggestedPlacement": "Footer or 'Sobre DACSA' section showing research/industry aspect",
+    "altText": "Investigadora trabajando en laboratorio, representando la actividad industrial y científica del Grupo DACSA"
+  },
+  {
+    "filename": "uk.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/uk.png",
+    "context": "Language selector icon — UK/English flag for switching to English version of the site.",
+    "suggestedPlacement": "Language switcher in header/navigation",
+    "altText": "Versión en inglés"
+  },
+  {
+    "filename": "va.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/va.png",
+    "context": "Language selector icon — Valencian flag for switching to Valencian language version of the site.",
+    "suggestedPlacement": "Language switcher in header/navigation",
+    "altText": "Versió en valencià"
+  },
+  {
+    "filename": "image00002_copia_2.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/image00002%20copia%202.jpeg",
+    "context": "News item: Workshop 'Innovación y emprendimiento en el contexto actual post-pandemia y de crisis en las cooperativas valencianas. 2a edición', May 10, 2023.",
+    "suggestedPlacement": "Actividades / news archive — workshop 2023",
+    "altText": "Taller sobre innovación y emprendimiento post-pandemia en cooperativas valencianas, mayo 2023"
+  },
+  {
+    "filename": "image00001_copia_3.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/image00001%20copia%203.jpeg",
+    "context": "News item: Workshop 'Innovación y emprendimiento en el contexto actual post-pandemia y de crisis en las cooperativas valencianas. 2a edición', May 10, 2023.",
+    "suggestedPlacement": "Actividades / news archive — workshop 2023",
+    "altText": "Taller sobre innovación y emprendimiento post-pandemia en cooperativas valencianas, mayo 2023"
+  },
+  {
+    "filename": "image00003_copia_2.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/image00003%20copia%202.jpeg",
+    "context": "News item: Workshop 'Innovación y emprendimiento en el contexto actual post-pandemia y de crisis en las cooperativas valencianas. 2a edición', May 10, 2023.",
+    "suggestedPlacement": "Actividades / news archive — workshop 2023",
+    "altText": "Participantes en el taller sobre innovación y emprendimiento post-pandemia, mayo 2023"
+  },
+  {
+    "filename": "image00004.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/image00004.jpeg",
+    "context": "News item: Workshop 'Innovación y emprendimiento en el contexto actual post-pandemia y de crisis en las cooperativas valencianas. 2a edición', May 10, 2023.",
+    "suggestedPlacement": "Actividades / news archive — workshop 2023",
+    "altText": "Ponentes en el taller sobre innovación y emprendimiento post-pandemia, mayo 2023"
+  },
+  {
+    "filename": "IMG_6279.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_6279.jpg",
+    "context": "News item: Evaluation day for business viability plans 2022-2023, May 8, 2023. Four finalist projects: Solanel, Un albergue Diferente, MyCloset, and Ecohand.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jornada de valoración de proyectos del Concurso de Planes de Viabilidad Empresarial 2022-2023"
+  },
+  {
+    "filename": "IMG_6278.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_6278.jpg",
+    "context": "News item: Evaluation day for business viability plans 2022-2023, May 8, 2023. Jury session evaluating finalist projects.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jurado evaluando los proyectos finalistas del Concurso de Planes de Viabilidad Empresarial 2022-2023"
+  },
+  {
+    "filename": "IMG_5988.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_5988.jpg",
+    "context": "News item: Meeting with Professor Christian Makaya from Université Paris Nanterre, April 3, 2023. Establishing collaborative research lines on entrepreneurial leadership.",
+    "suggestedPlacement": "Transferencia de conocimiento / colaboraciones section",
+    "altText": "Reunión con el Profesor Christian Makaya de la Université Paris Nanterre para establecer líneas de investigación colaborativa, abril 2023"
+  },
+  {
+    "filename": "Foto_conferencia_2a_Jose_Luis.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Foto%20conferencia%202a%20Jose%20Luis%20copia.jpg",
+    "context": "News item: Conference by Dr. José Luis Gascó Gascó on SIRHO research group experiences, March 11, 2023.",
+    "suggestedPlacement": "Conferencias / transferencia de conocimiento section",
+    "altText": "Conferencia del Dr. José Luis Gascó Gascó sobre experiencias del Grupo de Investigación SIRHO, marzo 2023"
+  },
+  {
+    "filename": "Foto_conferencia_1b_Jose_Luis.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Foto%20conferencia%201b%20Jose%20Luis%20copia.jpg",
+    "context": "News item: Conference 'El Club de las Buenas Decisiones' — innovation in postgraduate teaching, March 10, 2023.",
+    "suggestedPlacement": "Conferencias / transferencia de conocimiento section",
+    "altText": "Conferencia 'El Club de las Buenas Decisiones', innovación en docencia de postgrado, marzo 2023"
+  },
+  {
+    "filename": "Foto_conferencia_2b_Felipe.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Foto%20conferencia%202b%20Felipe%20copia.jpg",
+    "context": "News item: Conference by Dr. Felipe Hernández Perlines on obtaining research project funding, March 4, 2023.",
+    "suggestedPlacement": "Conferencias / transferencia de conocimiento section",
+    "altText": "Conferencia del Dr. Felipe Hernández Perlines sobre financiación de proyectos de investigación, marzo 2023"
+  },
+  {
+    "filename": "Foto_conferencia_1a_Felipe.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Foto%20conferencia%201a%20Felipe%20copia.jpg",
+    "context": "News item: Conference on innovation in family businesses and its influence on rural depopulation, March 3, 2023.",
+    "suggestedPlacement": "Conferencias / transferencia de conocimiento section",
+    "altText": "Conferencia sobre innovación en la empresa familiar y despoblación rural, marzo 2023"
+  },
+  {
+    "filename": "IMG_5766.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_5766.jpg",
+    "context": "News item: Presentation by Cristina Blanco on Agile models / Lean Startup methodology applied to business creation, February 22, 2023.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Presentación de Cristina Blanco sobre metodología Lean Startup para la creación de empresas, febrero 2023"
+  },
+  {
+    "filename": "3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/3.jpg",
+    "context": "News item: Visit by the Chair to FECOVI (Federación de Cooperativas de Viviendas y Rehabilitación de la Comunitat Valenciana).",
+    "suggestedPlacement": "Actividades / visitas empresariales section",
+    "altText": "Visita de la Cátedra a la Federación de Cooperativas de Viviendas FECOVI"
+  },
+  {
+    "filename": "4.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/4.jpg",
+    "context": "News item: Visit by the Chair to Consum supermarket headquarters.",
+    "suggestedPlacement": "Actividades / visitas empresariales section",
+    "altText": "Visita de la Cátedra a la sede de Consum"
+  },
+  {
+    "filename": "ey.1_50.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ey.1%2050.jpg",
+    "context": "News item: EY Premio Emprendedor del Año 2022 — event photo.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Evento EY Premio Emprendedor del Año 2022"
+  },
+  {
+    "filename": "ey.2_copia.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ey.2%20copia.jpg",
+    "context": "News item: EY Premio Emprendedor del Año 2022 — event photo.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Gala EY Premio Emprendedor del Año 2022"
+  },
+  {
+    "filename": "ey.4_copia.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ey.4%20copia.jpg",
+    "context": "News item: EY Premio Emprendedor del Año 2022 — event photo.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Ceremonia EY Premio Emprendedor del Año 2022"
+  },
+  {
+    "filename": "ey.hablando.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ey.hablando.jpg",
+    "context": "News item: EY Premio Emprendedor del Año 2022 — speaker/presentation photo.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Ponente en el evento EY Premio Emprendedor del Año 2022"
+  },
+  {
+    "filename": "IMG_5348.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_5348.jpg",
+    "context": "News item: 'Los programas académicos de management, a debate' — academic debate event, November 23, 2022.",
+    "suggestedPlacement": "Actividades / eventos académicos section",
+    "altText": "Debate sobre programas académicos de management, noviembre 2022"
+  },
+  {
+    "filename": "39fb6ae2_copia.JPG",
+    "originalUrl": "https://www.uv.es/catdacsa/images/39fb6ae2-3dc0-47d5-b060-9acd9c8f2ea5%20copia.JPG",
+    "context": "News item from the news page — exact event unclear from filename, likely a general event or conference photo from 2022.",
+    "suggestedPlacement": "General news archive",
+    "altText": "Evento de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/1.jpg",
+    "context": "News item: Visit by the Chair to ANECOOP (agricultural cooperative) headquarters.",
+    "suggestedPlacement": "Actividades / visitas empresariales section",
+    "altText": "Visita de la Cátedra a la sede de ANECOOP"
+  },
+  {
+    "filename": "foto_libro.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/foto%20libro.jpg",
+    "context": "News item: Book presentation 'Financing Startups. Understanding Strategic Risks'.",
+    "suggestedPlacement": "Publicaciones / transferencia de conocimiento section",
+    "altText": "Presentación del libro 'Financing Startups. Understanding Strategic Risks'"
+  },
+  {
+    "filename": "1.0_uno_3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/1.0%20uno%203.jpg",
+    "context": "News item: Conference 'CROWDFUNDING y CROWDLENDING ENTRE FINANCIACIÓN Y MARKETING', October 5, 2022.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia sobre Crowdfunding y Crowdlending, octubre 2022"
+  },
+  {
+    "filename": "1.0_dos.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/1.0%20dos.jpg",
+    "context": "News item: Conference 'CROWDFUNDING y CROWDLENDING ENTRE FINANCIACIÓN Y MARKETING', October 5, 2022.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Ponentes en la conferencia sobre Crowdfunding y Crowdlending, octubre 2022"
+  },
+  {
+    "filename": "Workshop_2022_1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Workshop%202022_1.jpg",
+    "context": "News item: First workshop on entrepreneurship, sustainability and corporate social responsibility, July 26, 2022.",
+    "suggestedPlacement": "Actividades / talleres section",
+    "altText": "Primer taller sobre emprendimiento, sostenibilidad y responsabilidad social corporativa, julio 2022"
+  },
+  {
+    "filename": "Workshop_2022_2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Workshop%202022_2.jpg",
+    "context": "News item: First workshop on entrepreneurship, sustainability and corporate social responsibility, July 26, 2022.",
+    "suggestedPlacement": "Actividades / talleres section",
+    "altText": "Participantes en el taller de emprendimiento, sostenibilidad y RSC, julio 2022"
+  },
+  {
+    "filename": "Clausura_2022_1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Clausura_2022_1.jpg",
+    "context": "News item: Closing ceremony of the ninth year of the Chair, June 27, 2022.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del noveno año de la Cátedra, junio 2022"
+  },
+  {
+    "filename": "Clausura_2022_2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Clausura_2022_2.jpg",
+    "context": "News item: Closing ceremony of the ninth year of the Chair, June 27, 2022.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Clausura del noveno año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, 2022"
+  },
+  {
+    "filename": "Clausura_2022_3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Clausura_2022_3.jpg",
+    "context": "News item: Closing ceremony of the ninth year of the Chair, June 27, 2022.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Participantes en la clausura del noveno año de la Cátedra, 2022"
+  },
+  {
+    "filename": "Clausura_2022_4.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Clausura_2022_4.jpg",
+    "context": "News item: Closing ceremony of the ninth year of the Chair, June 27, 2022.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Foto de grupo en la clausura del noveno año de la Cátedra, 2022"
+  },
+  {
+    "filename": "image009.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/image009.jpg",
+    "context": "News item: Closing ceremony of the ninth year of the Chair, June 27, 2022. Additional event photo.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura noveno año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, 2022"
+  },
+  {
+    "filename": "Jorn_Valor_22.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Jorn%20Valor%2022.png",
+    "context": "News item: Evaluation day for business viability plans 2021-2022, May 25, 2022.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jornada de valoración de proyectos del Concurso de Planes de Viabilidad Empresarial 2021-2022, mayo 2022"
+  },
+  {
+    "filename": "Conf_Luis_2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Conf%20Luis%202.png",
+    "context": "News item: Conference by Luis René Vásquez on 'Crowdfunding: Factores críticos de éxito', May 24, 2022.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Luis René Vásquez sobre Crowdfunding: Factores críticos de éxito, mayo 2022"
+  },
+  {
+    "filename": "Conf_Luis.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Conf%20Luis.png",
+    "context": "News item: Conference on relationship between CSR and financial performance, May 23, 2022.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia sobre responsabilidad social corporativa y performance financiera, mayo 2022"
+  },
+  {
+    "filename": "Acto_clausura_2021_1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_1.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del octavo año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, mayo 2021"
+  },
+  {
+    "filename": "Acto_clausura_2021_2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_2.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Clausura del octavo año de la Cátedra, mayo 2021"
+  },
+  {
+    "filename": "Acto_clausura_2021_3.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_3.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Participantes en la clausura del octavo año de la Cátedra, 2021"
+  },
+  {
+    "filename": "Acto_clausura_2021_4.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_4.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del octavo año de la Cátedra, 2021"
+  },
+  {
+    "filename": "Acto_clausura_2021_5.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_5.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Foto de grupo en la clausura del octavo año de la Cátedra, 2021"
+  },
+  {
+    "filename": "Acto_clausura_2021_6.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Acto%20clausura_2021_6.png",
+    "context": "News item: Closing ceremony of the eighth year of the Chair, May 18, 2021.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Clausura del octavo año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, 2021"
+  },
+  {
+    "filename": "Empresarial_Secundaria1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Empresarial_Secundaria1.png",
+    "context": "News item: XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato — business project competition for secondary and vocational education students, May 13, 2021.",
+    "suggestedPlacement": "Premios / concurso para secundaria section",
+    "altText": "XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato, mayo 2021"
+  },
+  {
+    "filename": "Empresarial_Secundaria2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Empresarial_Secundaria2.png",
+    "context": "News item: XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato, May 13, 2021.",
+    "suggestedPlacement": "Premios / concurso para secundaria section",
+    "altText": "Participantes del XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato, 2021"
+  },
+  {
+    "filename": "Empresarial_Secundaria3.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Empresarial_Secundaria3.png",
+    "context": "News item: XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato, May 13, 2021.",
+    "suggestedPlacement": "Premios / concurso para secundaria section",
+    "altText": "Premiados en el XIII Concurso Proyecto Empresarial para Ciclos Formativos y Bachillerato, 2021"
+  },
+  {
+    "filename": "Val_1.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Val_1.jpeg",
+    "context": "News item: Evaluation day for business viability plans 2020-2021, March 24, 2021.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jornada de valoración del Concurso de Planes de Viabilidad Empresarial 2020-2021, marzo 2021"
+  },
+  {
+    "filename": "Val_2.1.jpeg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Val_2.1.jpeg",
+    "context": "News item: Evaluation day for business viability plans 2020-2021, March 24, 2021.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jurado de valoración del Concurso de Planes de Viabilidad Empresarial 2020-2021"
+  },
+  {
+    "filename": "IMG_2449.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_2449.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'Emprendedor: tu nueva marca personal', December 17, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Isabel Morcillo 'Emprendedor: tu nueva marca personal', diciembre 2020"
+  },
+  {
+    "filename": "IMG_2448.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_2448.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'Emprendedor: tu nueva marca personal', December 17, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Ponente Isabel Morcillo en conferencia sobre marca personal del emprendedor, diciembre 2020"
+  },
+  {
+    "filename": "IMG_2440.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_2440.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'Mercado laboral post-covid 19', December 15, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Isabel Morcillo sobre el mercado laboral post-COVID 19, diciembre 2020"
+  },
+  {
+    "filename": "IMG_2442.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_2442.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'Mercado laboral post-covid 19', December 15, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Isabel Morcillo en conferencia sobre mercado laboral post-COVID, diciembre 2020"
+  },
+  {
+    "filename": "carla1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/carla1.jpg",
+    "context": "News item: Conference by Carla Martínez 'El crowdfunding como herramienta financiera que facilita la creación de empresas' (second part).",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Carla Martínez sobre crowdfunding como herramienta de creación de empresas"
+  },
+  {
+    "filename": "carla2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/carla2.jpg",
+    "context": "News item: Conference by Carla Martínez on crowdfunding (second part).",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Carla Martínez presentando sobre crowdfunding para la creación de empresas"
+  },
+  {
+    "filename": "carla3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/carla3.jpg",
+    "context": "News item: Conference by Carla Martínez on crowdfunding (first part).",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Carla Martínez sobre el crowdfunding como herramienta financiera"
+  },
+  {
+    "filename": "carla4.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/carla4.jpg",
+    "context": "News item: Conference by Carla Martínez on crowdfunding (first part).",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Carla Martínez en conferencia sobre crowdfunding, primera parte"
+  },
+  {
+    "filename": "carla5.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/carla5.jpg",
+    "context": "News item: Conference by Carla Martínez on crowdfunding (first part).",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Asistentes a la conferencia de Carla Martínez sobre crowdfunding"
+  },
+  {
+    "filename": "ROCHER1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ROCHER1.jpg",
+    "context": "News item: Conference by Juan José Rocher 'Situación post-pandemia y perspectivas de futuro en el emprendimiento valenciano', November 12, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Juan José Rocher en conferencia sobre emprendimiento valenciano post-pandemia, noviembre 2020"
+  },
+  {
+    "filename": "ROCHER2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ROCHER2.jpg",
+    "context": "News item: Conference by Juan José Rocher on post-pandemic entrepreneurship, November 12, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Juan José Rocher sobre perspectivas del emprendimiento valenciano, noviembre 2020"
+  },
+  {
+    "filename": "ROCHER3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ROCHER3.jpg",
+    "context": "News item: Conference by Juan José Rocher on post-pandemic entrepreneurship, November 12, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Ponente Juan José Rocher en conferencia sobre emprendimiento valenciano post-pandemia"
+  },
+  {
+    "filename": "IM1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IM1.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'El marketing empresarial en periodo de pandemia: Perspectiva de una emprendedora', November 12, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Isabel Morcillo sobre marketing empresarial durante la pandemia, noviembre 2020"
+  },
+  {
+    "filename": "IM2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IM2.jpg",
+    "context": "News item: Conference by Isabel Morcillo on business marketing during the pandemic / company history of ÍMOLA, November 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Isabel Morcillo presentando sobre marketing y emprendimiento durante la pandemia, noviembre 2020"
+  },
+  {
+    "filename": "REY1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/REY1.jpg",
+    "context": "News item: Conference by Rey-Martí on social entrepreneurship models, November 10, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Rey-Martí sobre modelos de empresa social, noviembre 2020"
+  },
+  {
+    "filename": "REY2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/REY2.jpg",
+    "context": "News item: Conference by Rey-Martí on social entrepreneurship models, November 10, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Rey-Martí en conferencia sobre emprendimiento social, noviembre 2020"
+  },
+  {
+    "filename": "REY3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/REY3.jpg",
+    "context": "News item: Conference by Rey-Martí on social entrepreneurship models, November 10, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Ponente Rey-Martí en conferencia sobre emprendimiento social"
+  },
+  {
+    "filename": "REY4.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/REY4.jpg",
+    "context": "News item: Conference by Rey-Martí on social entrepreneurship models, November 10, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Asistentes a la conferencia de Rey-Martí sobre empresa social, noviembre 2020"
+  },
+  {
+    "filename": "JJR_1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JJR%201.jpg",
+    "context": "News item: Conference by Juan José Rocher 'Iniciativas emprendedoras en época de pandemia', November 5, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Juan José Rocher en conferencia sobre iniciativas emprendedoras durante la pandemia, noviembre 2020"
+  },
+  {
+    "filename": "JJR2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JJR2.jpg",
+    "context": "News item: Conference by Juan José Rocher 'Iniciativas emprendedoras en época de pandemia', November 5, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Juan José Rocher sobre emprendimiento durante la pandemia, noviembre 2020"
+  },
+  {
+    "filename": "JJ23.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JJ23.jpg",
+    "context": "News item: Conference by Juan José Rocher 'Iniciativas emprendedoras en época de pandemia', November 5, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Asistentes en la conferencia de Juan José Rocher sobre emprendimiento, noviembre 2020"
+  },
+  {
+    "filename": "IM3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IM3.jpg",
+    "context": "News item: Conference by Isabel Morcillo 'Historia de una empresa desde su creacion: Imola - Agencia de Comunicación Creativa', November 5, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Isabel Morcillo presentando la historia de ÍMOLA Agencia de Comunicación Creativa, noviembre 2020"
+  },
+  {
+    "filename": "Costa.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Costa.png",
+    "context": "News item: Conference by Juan Costa 'Multicapitalism: Fighting climate chaos and global inequality in an intangible world', March 10, 2020.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Juan Costa en conferencia sobre Multicapitalismo, marzo 2020"
+  },
+  {
+    "filename": "xxxx.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/xxxx.png",
+    "context": "News item: Conference by Juan Costa on Multicapitalism, March 10, 2020. Additional photo.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia sobre Multicapitalismo en la Facultat d'Economia, marzo 2020"
+  },
+  {
+    "filename": "ggg.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/ggg.png",
+    "context": "News item: Closing ceremony of the seventh year of the Chair, March 4, 2020.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del séptimo año de la Cátedra, marzo 2020"
+  },
+  {
+    "filename": "zzz.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/zzz.png",
+    "context": "News item: Closing ceremony of the seventh year of the Chair, March 4, 2020.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Clausura del séptimo año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, 2020"
+  },
+  {
+    "filename": "DSC_0088.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/DSC_0088.png",
+    "context": "News item: Closing ceremony of the seventh year of the Chair, March 4, 2020. Additional event photo.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Foto de clausura del séptimo año de la Cátedra, 2020"
+  },
+  {
+    "filename": "JorVa.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JorVa.png",
+    "context": "News item: Evaluation day for business viability plans 2019-2020, February 6, 2020.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Jornada de valoración del Concurso de Planes de Viabilidad Empresarial 2019-2020"
+  },
+  {
+    "filename": "StEx2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/StEx2.png",
+    "context": "News item: Conference by José Luis de Cachavera from StartupExplore 'Claves e Instrumentos para el éxito en la financiación de proyectos emprendedores', November 27, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de StartupExplore sobre financiación de proyectos emprendedores, noviembre 2019"
+  },
+  {
+    "filename": "StEx1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/StEx1.png",
+    "context": "News item: Conference by José Luis de Cachavera from StartupExplore on funding entrepreneurial projects, November 27, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "José Luis de Cachavera de StartupExplore en conferencia sobre financiación emprendedora, noviembre 2019"
+  },
+  {
+    "filename": "EY.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/EY.png",
+    "context": "News item: EY Entrepreneur of the Year recognition — Antonio Arias Paredes named entrepreneur of the year, November 21, 2019.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Antonio Arias Paredes, emprendedor del año según EY, noviembre 2019"
+  },
+  {
+    "filename": "UniCF.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/UniCF.png",
+    "context": "News item: Conference by Ángel González 'Universo Crowdfunding en la Facultat d'Economia', November 8, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia Universo Crowdfunding en la Facultat d'Economia, noviembre 2019"
+  },
+  {
+    "filename": "Veggie_.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Veggie_.png",
+    "context": "News item: DACSA Veggie Day event 'Una experiencia para inconformistas', October 23, 2019.",
+    "suggestedPlacement": "Actividades / eventos especiales / noticias corporativas section",
+    "altText": "Veggie Day DACSA — Una experiencia para inconformistas, octubre 2019"
+  },
+  {
+    "filename": "Jurado_Foto_familia.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Jurado_Foto%20familia.jpg",
+    "context": "News item: Inauguration and presentation of the SIR by Raorsa Awards, September 27, 2019. Group photo of jury members.",
+    "suggestedPlacement": "Premios section",
+    "altText": "Jurado de los Premios SIR by Raorsa, septiembre 2019"
+  },
+  {
+    "filename": "Jurado_Universidad_Valencia_Domingo_Ribeiro.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Jurado_Universidad%20Valencia_Domingo%20Ribeiro.jpg",
+    "context": "News item: SIR by Raorsa Awards — photo of Domingo Ribeiro from Universidad de Valencia on the jury.",
+    "suggestedPlacement": "Premios section",
+    "altText": "Domingo Ribeiro de la Universitat de València en el jurado de los Premios SIR by Raorsa"
+  },
+  {
+    "filename": "fotofoto.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/fotofoto.png",
+    "context": "News item: Conference by Colectual on crowdlending 'Colectual en la Universitat de València', September 25, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Colectual sobre crowdlending en la Universitat de València, septiembre 2019"
+  },
+  {
+    "filename": "FamilyBusiness.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/FamilyBusiness.png",
+    "context": "News item: Workshop Family Business, May 17, 2019.",
+    "suggestedPlacement": "Actividades / talleres section",
+    "altText": "Workshop Family Business, mayo 2019"
+  },
+  {
+    "filename": "MesaP2019.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/MesaP2019.png",
+    "context": "News item: Closing ceremony of the sixth year of the Chair, April 10, 2019.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del sexto año de la Cátedra, abril 2019"
+  },
+  {
+    "filename": "Participantes.2019.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Participantes.2019.png",
+    "context": "News item: Employment and Entrepreneurship Forum participation (XVI Forum d'Ocupació i Emprenedoria), February 20-21, 2019.",
+    "suggestedPlacement": "Actividades section",
+    "altText": "Participación de la Cátedra en el XVI Fòrum d'Ocupació i Emprenedoria, febrero 2019"
+  },
+  {
+    "filename": "Borja.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Borja.png",
+    "context": "News item: Conference by Adrià Borja Martí on the Business Model Canvas, April 12, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Adrià Borja Martí sobre el modelo de negocio Canvas, abril 2019"
+  },
+  {
+    "filename": "Imagen_2.2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Imagen%202.2.png",
+    "context": "News item: Conference by Christine Wimschneider on frugal innovation, March 6, 2019.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia sobre innovación frugal, marzo 2019"
+  },
+  {
+    "filename": "Imagen_1.1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Imagen%201.1.png",
+    "context": "News item: Participation in the XVI Forum d'Ocupació i Emprenedoria, February 20-21, 2019.",
+    "suggestedPlacement": "Actividades section",
+    "altText": "Stand de la Cátedra en el XVI Fòrum d'Ocupació i Emprenedoria, febrero 2019"
+  },
+  {
+    "filename": "Araceli87.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Araceli87.png",
+    "context": "News item: Araceli Císcar (Grupo Dacsa) awarded with the Forinvest 2019 prize.",
+    "suggestedPlacement": "Premios / noticias corporativas section",
+    "altText": "Araceli Císcar del Grupo DACSA galardonada con el Premio Forinvest 2019"
+  },
+  {
+    "filename": "Araceli17.08.3.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Araceli17.08.3.png",
+    "context": "News item: Conference by Araceli Císcar at Catholic University of Valencia, July 17, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Araceli Císcar en conferencia en la Universidad Católica de Valencia, julio 2018"
+  },
+  {
+    "filename": "Araceli17.08.2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Araceli17.08.2.png",
+    "context": "News item: Conference by Araceli Císcar at Catholic University of Valencia, July 17, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Ponente Araceli Císcar en conferencia en la Universidad Católica de Valencia, 2018"
+  },
+  {
+    "filename": "Araceli17.08.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Araceli17.08.png",
+    "context": "News item: Conference by Araceli Císcar at Catholic University of Valencia, July 17, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Araceli Císcar en la Universidad Católica de Valencia, 2018"
+  },
+  {
+    "filename": "JBB.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JBB.png",
+    "context": "News item: Conference by Juan Ramón Bellot (KPMG) on professional career trajectory, April 23, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Juan Ramón Bellot (KPMG) sobre trayectoria profesional, abril 2018"
+  },
+  {
+    "filename": "JBB2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JBB2.png",
+    "context": "News item: Conference by Juan Ramón Bellot (KPMG) on professional career trajectory, April 23, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Juan Ramón Bellot de KPMG en conferencia sobre carrera profesional, abril 2018"
+  },
+  {
+    "filename": "Dacsa1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Dacsa1.png",
+    "context": "News item: Dacsa Group 50th anniversary celebration, 2018.",
+    "suggestedPlacement": "Noticias corporativas / Sobre DACSA section",
+    "altText": "Celebración del 50 aniversario del Grupo Familiar DACSA, 2018"
+  },
+  {
+    "filename": "Dacsa2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Dacsa2.png",
+    "context": "News item: Dacsa Group 50th anniversary celebration, 2018.",
+    "suggestedPlacement": "Noticias corporativas / Sobre DACSA section",
+    "altText": "Acto del 50 aniversario del Grupo DACSA, 2018"
+  },
+  {
+    "filename": "2020.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/2020.png",
+    "context": "News item: Associated with Dacsa Group 50th anniversary news item, 2018.",
+    "suggestedPlacement": "Noticias corporativas section",
+    "altText": "Imagen del Grupo DACSA"
+  },
+  {
+    "filename": "JB2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JB2.png",
+    "context": "News item: Conference by Jasmina Berbegal 'Innovación y destrucción creativa', April 19, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Jasmina Berbegal sobre innovación y destrucción creativa, abril 2018"
+  },
+  {
+    "filename": "JB1.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/JB1.png",
+    "context": "News item: Conference by Jasmina Berbegal on innovation and creative destruction, April 19, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Jasmina Berbegal en conferencia sobre innovación y destrucción creativa, 2018"
+  },
+  {
+    "filename": "CB.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/CB.png",
+    "context": "News item: Conference by Carlos Teschendorff on creating innovative companies in Valencia (Meltdown Bar), April 16, 2018.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Carlos Teschendorff sobre creación de empresas innovadoras en Valencia, abril 2018"
+  },
+  {
+    "filename": "IMG_3820",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_3820",
+    "context": "News item: Closing ceremony of the fifth year of the Chair, April 11, 2018.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Acto de clausura del quinto año de la Cátedra de Excelencia y Desarrollo en Emprendimiento, abril 2018"
+  },
+  {
+    "filename": "IMG-8848.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG-8848.png",
+    "context": "News item: Closing ceremony of the fifth year of the Chair, April 11, 2018.",
+    "suggestedPlacement": "Actividades / actos institucionales section",
+    "altText": "Clausura del quinto año de la Cátedra, abril 2018"
+  },
+  {
+    "filename": "IMG-8009.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG-8009.png",
+    "context": "News item: Results of the business viability plan competition 2017-2018, February 1, 2018.",
+    "suggestedPlacement": "Premios / concurso de planes de viabilidad section",
+    "altText": "Fallo del concurso de planes de viabilidad empresarial 2017-2018"
+  },
+  {
+    "filename": "Image-2.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/Image-2.png",
+    "context": "News item: Conference by Daniel Lacalle on central bank measures and economic crisis, November 27, 2017.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Daniel Lacalle sobre medidas de los bancos centrales y crisis económica, noviembre 2017"
+  },
+  {
+    "filename": "IMG-20177.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG-20177.png",
+    "context": "News item: Conference by Juan José Rocher 'La Robótica y su implicación en la industria', May 18, 2017.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Juan José Rocher en conferencia sobre robótica e industria, mayo 2017"
+  },
+  {
+    "filename": "IMG_20171.png",
+    "originalUrl": "https://www.uv.es/catdacsa/images/IMG_20171.png",
+    "context": "News item: Conference by Manuel Palma on 'La Dirección de un Holding de Empresas'.",
+    "suggestedPlacement": "Conferencias section",
+    "altText": "Conferencia de Manuel Palma sobre la dirección de un holding de empresas"
+  },
+  {
+    "filename": "2.1.1.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/2.1.1.jpg",
+    "context": "News page content image — likely from an activities or conference section. Exact event unclear from filename.",
+    "suggestedPlacement": "General news archive",
+    "altText": "Actividad de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "2.2.2.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/2.2.2.jpg",
+    "context": "News page content image — likely from an activities or conference section. Exact event unclear from filename.",
+    "suggestedPlacement": "General news archive",
+    "altText": "Actividad de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "2.3.3.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/2.3.3.jpg",
+    "context": "News page content image — likely from an activities or conference section. Exact event unclear from filename.",
+    "suggestedPlacement": "General news archive",
+    "altText": "Actividad de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  },
+  {
+    "filename": "2.4.4.jpg",
+    "originalUrl": "https://www.uv.es/catdacsa/images/2.4.4.jpg",
+    "context": "News page content image — likely from an activities or conference section. Exact event unclear from filename.",
+    "suggestedPlacement": "General news archive",
+    "altText": "Actividad de la Cátedra de Excelencia y Desarrollo en Emprendimiento"
+  }
+]
