@@ -90,7 +90,7 @@ import funders from '../../data/funders.json';
             <div class="h-14 flex items-center">
               {funder.logo ? (
                 <img
-                  src={funder.logo}
+                  src={`${import.meta.env.BASE_URL}${funder.logo.slice(1)}`}
                   alt={funder.name}
                   width="120"
                   height="40"

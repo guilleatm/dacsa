@@ -118,7 +118,7 @@ const typeConfig: Record<string, { dot: string; label: string }> = {
                 {yearBlock.image && (
                   <div class="mt-5 sm:mt-0 sm:shrink-0">
                     <img
-                      src={yearBlock.image}
+                      src={`${import.meta.env.BASE_URL}${yearBlock.image.slice(1)}`}
                       alt={yearBlock.imageAlt ?? ''}
                       width="160"
                       height="120"
@@ -136,22 +136,5 @@ const typeConfig: Record<string, { dot: string; label: string }> = {
     </div>
   </section>
 
-  <!-- ====================================================
-       CTA STRIP
-       ==================================================== -->
-  <section class="bg-gray-50 border-t border-gray-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
-      <div>
-        <p class="font-semibold text-dacsa-dark">¿Quieres saber cómo se financian estas actividades?</p>
-        <p class="text-sm text-dacsa-gray mt-1">Consulta nuestra página de transparencia para ver el uso de los fondos.</p>
-      </div>
-      <a
-        href="/es/transparencia/"
-        class="inline-flex items-center justify-center px-6 py-3 bg-dacsa-amber text-dacsa-dark font-semibold text-sm rounded-sm hover:bg-amber-400 transition-colors whitespace-nowrap"
-      >
-        Ver transparencia &rarr;
-      </a>
-    </div>
-  </section>
 
 </BaseLayout>
